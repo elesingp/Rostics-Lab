@@ -1,0 +1,4 @@
+Unnamed: 0,Fact ID,Market Segment,Price Group,Room Type,latitude,longitude,action_order_success,action_order_success_std,conversion_rate_total,Room Type_Kmean_Cluster,Combined_Cluster,Price Group_Kmean_Cluster,latitude_longitude_Dbscan_Cluster,action_order_success_Dbscan_Cluster,Group
+10,74020678,Moscow,0,3,55.7505412,37.6174782,13618,76.52083766198086,0.8140668753736869,1,1.0_3.0_0.0_0.0,3,0.0,0.0,Control
+454,74020558,Kaluga,0,3,54.5101087,36.2598115,13532,68.09758220197239,0.5360450455890137,1,1.0_3.0_0.0_0.0,3,0.0,0.0,Test
+1114,74021958,Obninsk,0,3,55.09992175,36.60927334723832,13620,88.96195435863734,0.6050898512514447,1,1.0_3.0_0.0_0.0,3,0.0,0.0,Control

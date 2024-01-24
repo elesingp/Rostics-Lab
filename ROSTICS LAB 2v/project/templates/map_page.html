@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map Page</title>
+</head>
+<body>
+    <h1>Map</h1>
+    <!-- Предполагается, что карта сохраняется в 'static/map.html' -->
+    <iframe src="{{ url_for('static', filename='map.html') }}" width="1400" height="700"></iframe>
+    <form action="{{ url_for('submit_restraunts') }}" method="post">
+        <input type="text" name="restraunts" placeholder="Enter restraunt IDs separated by commas">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

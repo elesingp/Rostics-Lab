@@ -1,0 +1,2367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9e169dd8d621f94cb3484f9296d62b83 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9e169dd8d621f94cb3484f9296d62b83" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9e169dd8d621f94cb3484f9296d62b83 = L.map(
+                "map_9e169dd8d621f94cb3484f9296d62b83",
+                {
+                    center: [54.83564936330434, 49.573004273800166],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_391248e7954e10abb49c7f7f8d4264ac = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_391248e7954e10abb49c7f7f8d4264ac.addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var marker_8965e3d0c538317fbaa797196f6342cb = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_ce0d9a5bf0667a175c3d850c841874ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8965e3d0c538317fbaa797196f6342cb.setIcon(icon_ce0d9a5bf0667a175c3d850c841874ff);
+        
+    
+        var popup_564d1af2f12dfd783b4ded9e65b7cdd1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe3fbcfaa84240a448fdd50c10c9e6ae = $(`<div id="html_fe3fbcfaa84240a448fdd50c10c9e6ae" style="width: 100.0%; height: 100.0%;">Ресторан: 74020676, Помещение: 0, Ценовая группа: 4, TRX: 9298,                      TRX std: 45.59803809040731, Конверсия: 0.796470460614995, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_10.0</div>`)[0];
+                popup_564d1af2f12dfd783b4ded9e65b7cdd1.setContent(html_fe3fbcfaa84240a448fdd50c10c9e6ae);
+            
+        
+
+        marker_8965e3d0c538317fbaa797196f6342cb.bindPopup(popup_564d1af2f12dfd783b4ded9e65b7cdd1)
+        ;
+
+        
+    
+    
+            var marker_9f6d97f7cd55256b9939d4c9384bdde2 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_a5a9cfb91c506ad78df782bc37240bb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9f6d97f7cd55256b9939d4c9384bdde2.setIcon(icon_a5a9cfb91c506ad78df782bc37240bb4);
+        
+    
+        var popup_deabf1f8691a9966b4f1d330a63e3be2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7855e5dd2ae0fca9e4352aa4fda1176d = $(`<div id="html_7855e5dd2ae0fca9e4352aa4fda1176d" style="width: 100.0%; height: 100.0%;">Ресторан: 74020678, Помещение: 3, Ценовая группа: 0, TRX: 13618,                      TRX std: 76.52083766198086, Конверсия: 0.8140668753736869, АБ Группа: ,                      Cluster: 0.0_1.0_0.0_0.0</div>`)[0];
+                popup_deabf1f8691a9966b4f1d330a63e3be2.setContent(html_7855e5dd2ae0fca9e4352aa4fda1176d);
+            
+        
+
+        marker_9f6d97f7cd55256b9939d4c9384bdde2.bindPopup(popup_deabf1f8691a9966b4f1d330a63e3be2)
+        ;
+
+        
+    
+    
+            var marker_066c883f83e299c88d848ffbf7280408 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_9e65c7a613a7e8f874b98bf885b2c353 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_066c883f83e299c88d848ffbf7280408.setIcon(icon_9e65c7a613a7e8f874b98bf885b2c353);
+        
+    
+        var popup_9fa67d1fb4fd50ab6a936b6af2427253 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c34dfbee2744914c50de5c9582ffa2d = $(`<div id="html_2c34dfbee2744914c50de5c9582ffa2d" style="width: 100.0%; height: 100.0%;">Ресторан: 74020701, Помещение: 0, Ценовая группа: 4, TRX: 8077,                      TRX std: 69.05431736587633, Конверсия: 0.6620002293364246, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_0.0</div>`)[0];
+                popup_9fa67d1fb4fd50ab6a936b6af2427253.setContent(html_2c34dfbee2744914c50de5c9582ffa2d);
+            
+        
+
+        marker_066c883f83e299c88d848ffbf7280408.bindPopup(popup_9fa67d1fb4fd50ab6a936b6af2427253)
+        ;
+
+        
+    
+    
+            var marker_471634d4bd723c104c886d08d62ee981 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_0fd65fea02607152d1980e85b9812c52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_471634d4bd723c104c886d08d62ee981.setIcon(icon_0fd65fea02607152d1980e85b9812c52);
+        
+    
+        var popup_05cb2fed5af20cf5d96b3982297c7c77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bc4e1d47e2f73148d0db36a75981718 = $(`<div id="html_5bc4e1d47e2f73148d0db36a75981718" style="width: 100.0%; height: 100.0%;">Ресторан: 74020746, Помещение: 3, Ценовая группа: 4, TRX: 18208,                      TRX std: 94.50340461438029, Конверсия: 0.7178182194355183, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_0.0</div>`)[0];
+                popup_05cb2fed5af20cf5d96b3982297c7c77.setContent(html_5bc4e1d47e2f73148d0db36a75981718);
+            
+        
+
+        marker_471634d4bd723c104c886d08d62ee981.bindPopup(popup_05cb2fed5af20cf5d96b3982297c7c77)
+        ;
+
+        
+    
+    
+            var marker_bbc310abc85cae02c85355a2d8f43b53 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_870a28327a300584872147e32eacf35c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_bbc310abc85cae02c85355a2d8f43b53.setIcon(icon_870a28327a300584872147e32eacf35c);
+        
+    
+        var popup_4659d5d1c58f0a26e44b8ad5aa41bfaf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1505b941f3c79f194ee2c036ad0354f9 = $(`<div id="html_1505b941f3c79f194ee2c036ad0354f9" style="width: 100.0%; height: 100.0%;">Ресторан: 74020757, Помещение: 3, Ценовая группа: 4, TRX: 11986,                      TRX std: 55.43295641260353, Конверсия: 0.7386308743541007, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_1.0</div>`)[0];
+                popup_4659d5d1c58f0a26e44b8ad5aa41bfaf.setContent(html_1505b941f3c79f194ee2c036ad0354f9);
+            
+        
+
+        marker_bbc310abc85cae02c85355a2d8f43b53.bindPopup(popup_4659d5d1c58f0a26e44b8ad5aa41bfaf)
+        ;
+
+        
+    
+    
+            var marker_0a1ad88473efd50572f3f8740e639569 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_f372767df838fb21989e2ca7b8a7bab0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_0a1ad88473efd50572f3f8740e639569.setIcon(icon_f372767df838fb21989e2ca7b8a7bab0);
+        
+    
+        var popup_ddf0aa7d9b8f8a7e16763c9df89acef1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ceeeefe20917e4a05ae01bdb01941a9b = $(`<div id="html_ceeeefe20917e4a05ae01bdb01941a9b" style="width: 100.0%; height: 100.0%;">Ресторан: 74020763, Помещение: 0, Ценовая группа: 4, TRX: 8558,                      TRX std: 35.307040271478854, Конверсия: 0.7661167331219398, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_9.0</div>`)[0];
+                popup_ddf0aa7d9b8f8a7e16763c9df89acef1.setContent(html_ceeeefe20917e4a05ae01bdb01941a9b);
+            
+        
+
+        marker_0a1ad88473efd50572f3f8740e639569.bindPopup(popup_ddf0aa7d9b8f8a7e16763c9df89acef1)
+        ;
+
+        
+    
+    
+            var marker_8485ad60cfaff154401b53cfa62e83f4 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_e82b634ba1ecf061eae1adeaeca25655 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_8485ad60cfaff154401b53cfa62e83f4.setIcon(icon_e82b634ba1ecf061eae1adeaeca25655);
+        
+    
+        var popup_f0db6d58a1e299ff425eb0b4e181e1ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a08697b43b3a02b12d49b26d88fb388 = $(`<div id="html_5a08697b43b3a02b12d49b26d88fb388" style="width: 100.0%; height: 100.0%;">Ресторан: 74020776, Помещение: 3, Ценовая группа: 4, TRX: 7783,                      TRX std: 39.86811748728486, Конверсия: 0.6958747074123592, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_2.0</div>`)[0];
+                popup_f0db6d58a1e299ff425eb0b4e181e1ba.setContent(html_5a08697b43b3a02b12d49b26d88fb388);
+            
+        
+
+        marker_8485ad60cfaff154401b53cfa62e83f4.bindPopup(popup_f0db6d58a1e299ff425eb0b4e181e1ba)
+        ;
+
+        
+    
+    
+            var marker_b17cf730355858507aaa790a0fd64c3b = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_3bf4db96368337cfb54cfc2e7d3f0490 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_b17cf730355858507aaa790a0fd64c3b.setIcon(icon_3bf4db96368337cfb54cfc2e7d3f0490);
+        
+    
+        var popup_74877a423f3c9b9543df910f6296448e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e4a35ee241c122ec90d5521c945fb05 = $(`<div id="html_8e4a35ee241c122ec90d5521c945fb05" style="width: 100.0%; height: 100.0%;">Ресторан: 74020793, Помещение: 3, Ценовая группа: 4, TRX: 18607,                      TRX std: 82.78889192739818, Конверсия: 0.7521735605023373, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_3.0</div>`)[0];
+                popup_74877a423f3c9b9543df910f6296448e.setContent(html_8e4a35ee241c122ec90d5521c945fb05);
+            
+        
+
+        marker_b17cf730355858507aaa790a0fd64c3b.bindPopup(popup_74877a423f3c9b9543df910f6296448e)
+        ;
+
+        
+    
+    
+            var marker_ad4c6b3944dcc032e12f99c1c4b1b126 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_5057561f52de88de9fbbecad8de98ac4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_ad4c6b3944dcc032e12f99c1c4b1b126.setIcon(icon_5057561f52de88de9fbbecad8de98ac4);
+        
+    
+        var popup_f715ae147d9ff0761e7cb1d54beb78be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30566669a2fb203096d24d8b8c64a513 = $(`<div id="html_30566669a2fb203096d24d8b8c64a513" style="width: 100.0%; height: 100.0%;">Ресторан: 74020802, Помещение: 3, Ценовая группа: 4, TRX: 9482,                      TRX std: 46.892921803703175, Конверсия: 0.7132851754544973, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_4.0</div>`)[0];
+                popup_f715ae147d9ff0761e7cb1d54beb78be.setContent(html_30566669a2fb203096d24d8b8c64a513);
+            
+        
+
+        marker_ad4c6b3944dcc032e12f99c1c4b1b126.bindPopup(popup_f715ae147d9ff0761e7cb1d54beb78be)
+        ;
+
+        
+    
+    
+            var marker_48f3a04c3c447d25204fa64e7499fcad = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_93418c565c8ffcde28bedf25b21a59fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_48f3a04c3c447d25204fa64e7499fcad.setIcon(icon_93418c565c8ffcde28bedf25b21a59fd);
+        
+    
+        var popup_8442bd4d3859150c453bceac725a6b34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f6f7d79d15ed13576df8716063f2b36 = $(`<div id="html_3f6f7d79d15ed13576df8716063f2b36" style="width: 100.0%; height: 100.0%;">Ресторан: 74020918, Помещение: 3, Ценовая группа: 4, TRX: 18155,                      TRX std: 99.828803960834, Конверсия: 0.726823418633131, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_0.0</div>`)[0];
+                popup_8442bd4d3859150c453bceac725a6b34.setContent(html_3f6f7d79d15ed13576df8716063f2b36);
+            
+        
+
+        marker_48f3a04c3c447d25204fa64e7499fcad.bindPopup(popup_8442bd4d3859150c453bceac725a6b34)
+        ;
+
+        
+    
+    
+            var marker_0d7b5496c00619c4ceec1e8bcd28a519 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_2abf79fd32659609325957af9eee4f89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_0d7b5496c00619c4ceec1e8bcd28a519.setIcon(icon_2abf79fd32659609325957af9eee4f89);
+        
+    
+        var popup_4b83a41117cc56366e05bfdca96f3f6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec3d18dbb0a6126952b2d66a97eed8fe = $(`<div id="html_ec3d18dbb0a6126952b2d66a97eed8fe" style="width: 100.0%; height: 100.0%;">Ресторан: 74020983, Помещение: 0, Ценовая группа: 4, TRX: 18920,                      TRX std: 81.35149916283105, Конверсия: 0.752484014741745, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_1.0</div>`)[0];
+                popup_4b83a41117cc56366e05bfdca96f3f6d.setContent(html_ec3d18dbb0a6126952b2d66a97eed8fe);
+            
+        
+
+        marker_0d7b5496c00619c4ceec1e8bcd28a519.bindPopup(popup_4b83a41117cc56366e05bfdca96f3f6d)
+        ;
+
+        
+    
+    
+            var marker_c5aa2902c487cec4e6f1765c07047b2a = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_e1da0273818f439f903a7c93c3e8d174 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_c5aa2902c487cec4e6f1765c07047b2a.setIcon(icon_e1da0273818f439f903a7c93c3e8d174);
+        
+    
+        var popup_02ee6c31f526563bb9310bcb838df092 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b28b2eea9f8ac920167def9f1ffbc9d = $(`<div id="html_0b28b2eea9f8ac920167def9f1ffbc9d" style="width: 100.0%; height: 100.0%;">Ресторан: 74021070, Помещение: 3, Ценовая группа: 4, TRX: 14222,                      TRX std: 108.15995476393442, Конверсия: 0.7028061251134998, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_5.0</div>`)[0];
+                popup_02ee6c31f526563bb9310bcb838df092.setContent(html_0b28b2eea9f8ac920167def9f1ffbc9d);
+            
+        
+
+        marker_c5aa2902c487cec4e6f1765c07047b2a.bindPopup(popup_02ee6c31f526563bb9310bcb838df092)
+        ;
+
+        
+    
+    
+            var marker_b0cc696265378b8adfd4354aeabd0113 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_2b4b3984205e38d6c8d53761fde12aaa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b0cc696265378b8adfd4354aeabd0113.setIcon(icon_2b4b3984205e38d6c8d53761fde12aaa);
+        
+    
+        var popup_78ce7e1fee9e3421b535e5028619b704 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86dd99916b969513276f6d57da5f78d9 = $(`<div id="html_86dd99916b969513276f6d57da5f78d9" style="width: 100.0%; height: 100.0%;">Ресторан: 74021221, Помещение: 3, Ценовая группа: 4, TRX: 14603,                      TRX std: 65.91456553656927, Конверсия: 0.7648125160103527, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_10.0</div>`)[0];
+                popup_78ce7e1fee9e3421b535e5028619b704.setContent(html_86dd99916b969513276f6d57da5f78d9);
+            
+        
+
+        marker_b0cc696265378b8adfd4354aeabd0113.bindPopup(popup_78ce7e1fee9e3421b535e5028619b704)
+        ;
+
+        
+    
+    
+            var marker_2856d8907b3fd331e098860a47db1ec7 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_bedf1ae26a1f5fc8ea96dfe6543dcfc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2856d8907b3fd331e098860a47db1ec7.setIcon(icon_bedf1ae26a1f5fc8ea96dfe6543dcfc2);
+        
+    
+        var popup_99832d11c306fa3480c2ad88d03a88f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_587fbbbcd5793502b40569ecd026a77c = $(`<div id="html_587fbbbcd5793502b40569ecd026a77c" style="width: 100.0%; height: 100.0%;">Ресторан: 74021242, Помещение: 3, Ценовая группа: 4, TRX: 16865,                      TRX std: 139.4655705305382, Конверсия: 0.7440966357562196, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_6.0</div>`)[0];
+                popup_99832d11c306fa3480c2ad88d03a88f5.setContent(html_587fbbbcd5793502b40569ecd026a77c);
+            
+        
+
+        marker_2856d8907b3fd331e098860a47db1ec7.bindPopup(popup_99832d11c306fa3480c2ad88d03a88f5)
+        ;
+
+        
+    
+    
+            var marker_d3be6b960730065bcd98bb2ee11f4c71 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_d31d5c299740f5492a861fb59ed1b634 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_d3be6b960730065bcd98bb2ee11f4c71.setIcon(icon_d31d5c299740f5492a861fb59ed1b634);
+        
+    
+        var popup_4eb3c332c4755aeedd1a5905349f0ed0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_634ecef0dc4b38b4101614a6da28e576 = $(`<div id="html_634ecef0dc4b38b4101614a6da28e576" style="width: 100.0%; height: 100.0%;">Ресторан: 74021307, Помещение: 3, Ценовая группа: 4, TRX: 13243,                      TRX std: 91.8417375810408, Конверсия: 0.8194690558117312, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_7.0</div>`)[0];
+                popup_4eb3c332c4755aeedd1a5905349f0ed0.setContent(html_634ecef0dc4b38b4101614a6da28e576);
+            
+        
+
+        marker_d3be6b960730065bcd98bb2ee11f4c71.bindPopup(popup_4eb3c332c4755aeedd1a5905349f0ed0)
+        ;
+
+        
+    
+    
+            var marker_e8534e416721540ec9033471ab166054 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_38a5ae8972200fa69a4abebf3df4cc35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e8534e416721540ec9033471ab166054.setIcon(icon_38a5ae8972200fa69a4abebf3df4cc35);
+        
+    
+        var popup_449782b833389458617241291984fdf2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb200d352cd9a8aa5d7022a1e16417f1 = $(`<div id="html_fb200d352cd9a8aa5d7022a1e16417f1" style="width: 100.0%; height: 100.0%;">Ресторан: 74021337, Помещение: 3, Ценовая группа: 4, TRX: 16599,                      TRX std: 78.39636854793568, Конверсия: 0.7762954082645546, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_8.0</div>`)[0];
+                popup_449782b833389458617241291984fdf2.setContent(html_fb200d352cd9a8aa5d7022a1e16417f1);
+            
+        
+
+        marker_e8534e416721540ec9033471ab166054.bindPopup(popup_449782b833389458617241291984fdf2)
+        ;
+
+        
+    
+    
+            var marker_a6f17622ecc1827d23ea386d73a75d31 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_a4b7ec5200152a4242045f6a8813e181 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a6f17622ecc1827d23ea386d73a75d31.setIcon(icon_a4b7ec5200152a4242045f6a8813e181);
+        
+    
+        var popup_e705a9385390fd49bedf8d61e68ff4a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fae0ab79439181d6bd0319e173f0b4c1 = $(`<div id="html_fae0ab79439181d6bd0319e173f0b4c1" style="width: 100.0%; height: 100.0%;">Ресторан: 74021359, Помещение: 0, Ценовая группа: 4, TRX: 11846,                      TRX std: 79.17839775897967, Конверсия: 0.7635892224023262, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_2.0</div>`)[0];
+                popup_e705a9385390fd49bedf8d61e68ff4a7.setContent(html_fae0ab79439181d6bd0319e173f0b4c1);
+            
+        
+
+        marker_a6f17622ecc1827d23ea386d73a75d31.bindPopup(popup_e705a9385390fd49bedf8d61e68ff4a7)
+        ;
+
+        
+    
+    
+            var marker_f37385d84559174472dea69cc1a61791 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_e28b9c26f46c6383fb7481a7d19b42f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_f37385d84559174472dea69cc1a61791.setIcon(icon_e28b9c26f46c6383fb7481a7d19b42f9);
+        
+    
+        var popup_5825d15c6a7357ed30aa7bfd202b1748 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e8bdfb4c3aaa756a7aee60764713571 = $(`<div id="html_8e8bdfb4c3aaa756a7aee60764713571" style="width: 100.0%; height: 100.0%;">Ресторан: 74021363, Помещение: 3, Ценовая группа: 4, TRX: 18624,                      TRX std: 82.22411149582705, Конверсия: 0.7985041362701844, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_3.0</div>`)[0];
+                popup_5825d15c6a7357ed30aa7bfd202b1748.setContent(html_8e8bdfb4c3aaa756a7aee60764713571);
+            
+        
+
+        marker_f37385d84559174472dea69cc1a61791.bindPopup(popup_5825d15c6a7357ed30aa7bfd202b1748)
+        ;
+
+        
+    
+    
+            var marker_0b0f957426d29e2cf95496b05dc3c116 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_79e51717790920ea979a14a866c4cf7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_0b0f957426d29e2cf95496b05dc3c116.setIcon(icon_79e51717790920ea979a14a866c4cf7c);
+        
+    
+        var popup_1b6f4a09012a6668fed1c7baf7b11aa6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0a242dc733c1568734eb2be5647e949 = $(`<div id="html_c0a242dc733c1568734eb2be5647e949" style="width: 100.0%; height: 100.0%;">Ресторан: 74221440, Помещение: 0, Ценовая группа: 5, TRX: 18857,                      TRX std: 94.28435766472944, Конверсия: 0.6852201573922553, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_1.0</div>`)[0];
+                popup_1b6f4a09012a6668fed1c7baf7b11aa6.setContent(html_c0a242dc733c1568734eb2be5647e949);
+            
+        
+
+        marker_0b0f957426d29e2cf95496b05dc3c116.bindPopup(popup_1b6f4a09012a6668fed1c7baf7b11aa6)
+        ;
+
+        
+    
+    
+            var marker_7fe902d2e2259fa8b149f28398eedbbf = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_c5f9f57eacc942369ecc399b348b1c7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_7fe902d2e2259fa8b149f28398eedbbf.setIcon(icon_c5f9f57eacc942369ecc399b348b1c7d);
+        
+    
+        var popup_89896f620063121d833fb44f4f3cf6af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9dd4c9817e5d29e76e3ce9c247cb986 = $(`<div id="html_b9dd4c9817e5d29e76e3ce9c247cb986" style="width: 100.0%; height: 100.0%;">Ресторан: 74021452, Помещение: 3, Ценовая группа: 4, TRX: 11574,                      TRX std: 91.6095014279616, Конверсия: 0.7326106478480666, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_9.0</div>`)[0];
+                popup_89896f620063121d833fb44f4f3cf6af.setContent(html_b9dd4c9817e5d29e76e3ce9c247cb986);
+            
+        
+
+        marker_7fe902d2e2259fa8b149f28398eedbbf.bindPopup(popup_89896f620063121d833fb44f4f3cf6af)
+        ;
+
+        
+    
+    
+            var marker_120f8498afbb165a08963e83ec222970 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_1aeaec42c4e7699c5fc4d96ae9bfde23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_120f8498afbb165a08963e83ec222970.setIcon(icon_1aeaec42c4e7699c5fc4d96ae9bfde23);
+        
+    
+        var popup_f3e9079183f2e95762bc95ee7c26c6aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_621930ea25480d1fd2020730352e8f16 = $(`<div id="html_621930ea25480d1fd2020730352e8f16" style="width: 100.0%; height: 100.0%;">Ресторан: 74021471, Помещение: 3, Ценовая группа: 4, TRX: 11592,                      TRX std: 55.89167826473024, Конверсия: 0.398695019194174, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_9.0</div>`)[0];
+                popup_f3e9079183f2e95762bc95ee7c26c6aa.setContent(html_621930ea25480d1fd2020730352e8f16);
+            
+        
+
+        marker_120f8498afbb165a08963e83ec222970.bindPopup(popup_f3e9079183f2e95762bc95ee7c26c6aa)
+        ;
+
+        
+    
+    
+            var marker_690a96e6ba94d40acb87361e975ba8b2 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_ce7f7c15200b55a7e1c496f03d519d3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_690a96e6ba94d40acb87361e975ba8b2.setIcon(icon_ce7f7c15200b55a7e1c496f03d519d3b);
+        
+    
+        var popup_abdfc0e5dbf0f7006ffb2e0fb0732f0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b20c9f620a09815c1acdb355d79b930d = $(`<div id="html_b20c9f620a09815c1acdb355d79b930d" style="width: 100.0%; height: 100.0%;">Ресторан: 74021508, Помещение: 0, Ценовая группа: 4, TRX: 18350,                      TRX std: 81.35808407657797, Конверсия: 0.761783652440705, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_7.0</div>`)[0];
+                popup_abdfc0e5dbf0f7006ffb2e0fb0732f0c.setContent(html_b20c9f620a09815c1acdb355d79b930d);
+            
+        
+
+        marker_690a96e6ba94d40acb87361e975ba8b2.bindPopup(popup_abdfc0e5dbf0f7006ffb2e0fb0732f0c)
+        ;
+
+        
+    
+    
+            var marker_a5551d05d9662cca1dc8b0b6d18ec63a = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_fd5745f220341befee0803af0ca0929b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a5551d05d9662cca1dc8b0b6d18ec63a.setIcon(icon_fd5745f220341befee0803af0ca0929b);
+        
+    
+        var popup_53ecba49986b7a3fa4b03d97536f7637 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea568772000e9881c1dbe016646f939f = $(`<div id="html_ea568772000e9881c1dbe016646f939f" style="width: 100.0%; height: 100.0%;">Ресторан: 74021543, Помещение: 3, Ценовая группа: 4, TRX: 16667,                      TRX std: 76.54500535378864, Конверсия: 0.7227496870308168, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_8.0</div>`)[0];
+                popup_53ecba49986b7a3fa4b03d97536f7637.setContent(html_ea568772000e9881c1dbe016646f939f);
+            
+        
+
+        marker_a5551d05d9662cca1dc8b0b6d18ec63a.bindPopup(popup_53ecba49986b7a3fa4b03d97536f7637)
+        ;
+
+        
+    
+    
+            var marker_9d4c1479fa81f86d5205440667cd56a8 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_1d2fe921fcf42cf2ed750d0768c17fe7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_9d4c1479fa81f86d5205440667cd56a8.setIcon(icon_1d2fe921fcf42cf2ed750d0768c17fe7);
+        
+    
+        var popup_8bdefa0621e4e334adf1587814d21604 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a58b9ee0849642bbc8a51734091a1d25 = $(`<div id="html_a58b9ee0849642bbc8a51734091a1d25" style="width: 100.0%; height: 100.0%;">Ресторан: 74021541, Помещение: 3, Ценовая группа: 4, TRX: 7795,                      TRX std: 48.61786148634345, Конверсия: 0.734607589624222, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_2.0</div>`)[0];
+                popup_8bdefa0621e4e334adf1587814d21604.setContent(html_a58b9ee0849642bbc8a51734091a1d25);
+            
+        
+
+        marker_9d4c1479fa81f86d5205440667cd56a8.bindPopup(popup_8bdefa0621e4e334adf1587814d21604)
+        ;
+
+        
+    
+    
+            var marker_80f66d9e57b753a1bb849ba5b4573333 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_36213d93ca772efb3487cd3dac2aec3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_80f66d9e57b753a1bb849ba5b4573333.setIcon(icon_36213d93ca772efb3487cd3dac2aec3d);
+        
+    
+        var popup_14ae92814b20f4810c6c1b99fe2726a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0a29c5f2c5158da631210c92cec881c = $(`<div id="html_f0a29c5f2c5158da631210c92cec881c" style="width: 100.0%; height: 100.0%;">Ресторан: 74011885, Помещение: 0, Ценовая группа: 4, TRX: 13918,                      TRX std: 146.89745242454703, Конверсия: 0.6470452560584391, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_3.0</div>`)[0];
+                popup_14ae92814b20f4810c6c1b99fe2726a3.setContent(html_f0a29c5f2c5158da631210c92cec881c);
+            
+        
+
+        marker_80f66d9e57b753a1bb849ba5b4573333.bindPopup(popup_14ae92814b20f4810c6c1b99fe2726a3)
+        ;
+
+        
+    
+    
+            var marker_0de2a83d4504ee15c73f721a69fa81ae = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_a16785a40c5e6da3b903ff0f5412c9d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0de2a83d4504ee15c73f721a69fa81ae.setIcon(icon_a16785a40c5e6da3b903ff0f5412c9d5);
+        
+    
+        var popup_ccb573406edd6b28571514ef039efc61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da19dee53b5a4adf8cd4453652784c6f = $(`<div id="html_da19dee53b5a4adf8cd4453652784c6f" style="width: 100.0%; height: 100.0%;">Ресторан: 74013315, Помещение: 3, Ценовая группа: 4, TRX: 16949,                      TRX std: 71.41915790100174, Конверсия: 0.754477053921033, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_6.0</div>`)[0];
+                popup_ccb573406edd6b28571514ef039efc61.setContent(html_da19dee53b5a4adf8cd4453652784c6f);
+            
+        
+
+        marker_0de2a83d4504ee15c73f721a69fa81ae.bindPopup(popup_ccb573406edd6b28571514ef039efc61)
+        ;
+
+        
+    
+    
+            var marker_6e1f53c87f0f9effbda23ab28908fc28 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_bd944c7560a02444d2401e6429aaa622 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_6e1f53c87f0f9effbda23ab28908fc28.setIcon(icon_bd944c7560a02444d2401e6429aaa622);
+        
+    
+        var popup_0409e8ec4bce96c65443c4f3a3b51f4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af095b2b921e2a415b23ce22b19365d9 = $(`<div id="html_af095b2b921e2a415b23ce22b19365d9" style="width: 100.0%; height: 100.0%;">Ресторан: 74014122, Помещение: 0, Ценовая группа: 4, TRX: 11688,                      TRX std: 55.5178288778323, Конверсия: 0.7672333456911925, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_11.0</div>`)[0];
+                popup_0409e8ec4bce96c65443c4f3a3b51f4e.setContent(html_af095b2b921e2a415b23ce22b19365d9);
+            
+        
+
+        marker_6e1f53c87f0f9effbda23ab28908fc28.bindPopup(popup_0409e8ec4bce96c65443c4f3a3b51f4e)
+        ;
+
+        
+    
+    
+            var marker_b438850a6e6aa66dad346eeff09ec01e = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_3508a954fc4e69535a08bc8efa4116f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b438850a6e6aa66dad346eeff09ec01e.setIcon(icon_3508a954fc4e69535a08bc8efa4116f2);
+        
+    
+        var popup_6154faebb550e57f18ec7a94b5f4bc20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a491c48ebb035ec9a050570622e3767f = $(`<div id="html_a491c48ebb035ec9a050570622e3767f" style="width: 100.0%; height: 100.0%;">Ресторан: 74020444, Помещение: 0, Ценовая группа: 4, TRX: 18221,                      TRX std: 152.60714425016437, Конверсия: 0.743683208953355, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_7.0</div>`)[0];
+                popup_6154faebb550e57f18ec7a94b5f4bc20.setContent(html_a491c48ebb035ec9a050570622e3767f);
+            
+        
+
+        marker_b438850a6e6aa66dad346eeff09ec01e.bindPopup(popup_6154faebb550e57f18ec7a94b5f4bc20)
+        ;
+
+        
+    
+    
+            var marker_ad9d39fde04bc97db4885a88ac1ca162 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_301d88eda4ad39341c1de98c67d73df5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_ad9d39fde04bc97db4885a88ac1ca162.setIcon(icon_301d88eda4ad39341c1de98c67d73df5);
+        
+    
+        var popup_dfdf84b405ec306ab77b4a359183037d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef2ac32d3383dc6e08bbd3aa297499fd = $(`<div id="html_ef2ac32d3383dc6e08bbd3aa297499fd" style="width: 100.0%; height: 100.0%;">Ресторан: 74020381, Помещение: 0, Ценовая группа: 4, TRX: 8046,                      TRX std: 46.04298824921437, Конверсия: 0.7158679296095277, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_0.0</div>`)[0];
+                popup_dfdf84b405ec306ab77b4a359183037d.setContent(html_ef2ac32d3383dc6e08bbd3aa297499fd);
+            
+        
+
+        marker_ad9d39fde04bc97db4885a88ac1ca162.bindPopup(popup_dfdf84b405ec306ab77b4a359183037d)
+        ;
+
+        
+    
+    
+            var marker_da07c94187eba2025d88ea94b6815409 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_7a36999f0c10993570cd3427b599d3ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_da07c94187eba2025d88ea94b6815409.setIcon(icon_7a36999f0c10993570cd3427b599d3ed);
+        
+    
+        var popup_061d471f40a35160e6c0543274ab9271 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a432a85a18bd685d189a3575466152e = $(`<div id="html_7a432a85a18bd685d189a3575466152e" style="width: 100.0%; height: 100.0%;">Ресторан: 74213277, Помещение: 0, Ценовая группа: 4, TRX: 10077,                      TRX std: 78.07206754913986, Конверсия: 0.7436306169009007, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_4.0</div>`)[0];
+                popup_061d471f40a35160e6c0543274ab9271.setContent(html_7a432a85a18bd685d189a3575466152e);
+            
+        
+
+        marker_da07c94187eba2025d88ea94b6815409.bindPopup(popup_061d471f40a35160e6c0543274ab9271)
+        ;
+
+        
+    
+    
+            var marker_093026d6ecaa2e564ce528eb8405c5c7 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_0d91232cbd212453a984589bd12c4da7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_093026d6ecaa2e564ce528eb8405c5c7.setIcon(icon_0d91232cbd212453a984589bd12c4da7);
+        
+    
+        var popup_f85461779c850193e16ca915af52f200 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e1bdc4b9fea144600ac56c9891292ad = $(`<div id="html_9e1bdc4b9fea144600ac56c9891292ad" style="width: 100.0%; height: 100.0%;">Ресторан: 74220422, Помещение: 0, Ценовая группа: 4, TRX: 12109,                      TRX std: 92.76102505591216, Конверсия: 0.7469079234592437, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_5.0</div>`)[0];
+                popup_f85461779c850193e16ca915af52f200.setContent(html_9e1bdc4b9fea144600ac56c9891292ad);
+            
+        
+
+        marker_093026d6ecaa2e564ce528eb8405c5c7.bindPopup(popup_f85461779c850193e16ca915af52f200)
+        ;
+
+        
+    
+    
+            var marker_297689fa051b1855c45fa7fcb196b6f4 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_068b29e179442f9c07ee3d939482dae6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_297689fa051b1855c45fa7fcb196b6f4.setIcon(icon_068b29e179442f9c07ee3d939482dae6);
+        
+    
+        var popup_99420d3ec5e59ce767347ee5968762fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28d33b4584b61bf006178a7607258bd5 = $(`<div id="html_28d33b4584b61bf006178a7607258bd5" style="width: 100.0%; height: 100.0%;">Ресторан: 74220512, Помещение: 0, Ценовая группа: 4, TRX: 14323,                      TRX std: 124.705364675638, Конверсия: 0.7603250032161563, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_6.0</div>`)[0];
+                popup_99420d3ec5e59ce767347ee5968762fe.setContent(html_28d33b4584b61bf006178a7607258bd5);
+            
+        
+
+        marker_297689fa051b1855c45fa7fcb196b6f4.bindPopup(popup_99420d3ec5e59ce767347ee5968762fe)
+        ;
+
+        
+    
+    
+            var marker_80f85105760dbbbf93a7fd1dacc701f8 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_e47076bec004324c1fed2518b83cc4f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_80f85105760dbbbf93a7fd1dacc701f8.setIcon(icon_e47076bec004324c1fed2518b83cc4f2);
+        
+    
+        var popup_ae82e01441ce7b226d6bc5ef62a5db9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_326df2f362ccf9ca969698355f52cf8c = $(`<div id="html_326df2f362ccf9ca969698355f52cf8c" style="width: 100.0%; height: 100.0%;">Ресторан: 74220529, Помещение: 0, Ценовая группа: 4, TRX: 8423,                      TRX std: 89.52234707918696, Конверсия: 0.7525207493734025, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_9.0</div>`)[0];
+                popup_ae82e01441ce7b226d6bc5ef62a5db9d.setContent(html_326df2f362ccf9ca969698355f52cf8c);
+            
+        
+
+        marker_80f85105760dbbbf93a7fd1dacc701f8.bindPopup(popup_ae82e01441ce7b226d6bc5ef62a5db9d)
+        ;
+
+        
+    
+    
+            var marker_9e4d1b3babad97af01e17244f5e0b7b3 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_afa75cd93e920a947f9faa114ceea9ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_9e4d1b3babad97af01e17244f5e0b7b3.setIcon(icon_afa75cd93e920a947f9faa114ceea9ff);
+        
+    
+        var popup_5121f5416a63dcdffd9c648b1b3f6724 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd67a90c48c0ceb784e4523da1b78716 = $(`<div id="html_fd67a90c48c0ceb784e4523da1b78716" style="width: 100.0%; height: 100.0%;">Ресторан: 74220630, Помещение: 0, Ценовая группа: 4, TRX: 8106,                      TRX std: 43.46991440808937, Конверсия: 0.77305706328017, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_0.0</div>`)[0];
+                popup_5121f5416a63dcdffd9c648b1b3f6724.setContent(html_fd67a90c48c0ceb784e4523da1b78716);
+            
+        
+
+        marker_9e4d1b3babad97af01e17244f5e0b7b3.bindPopup(popup_5121f5416a63dcdffd9c648b1b3f6724)
+        ;
+
+        
+    
+    
+            var marker_e09e5c11e782154648d42560c3770cc1 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_0bffe38e8dcf25bff61810b0230e49f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_e09e5c11e782154648d42560c3770cc1.setIcon(icon_0bffe38e8dcf25bff61810b0230e49f4);
+        
+    
+        var popup_b93db44e6cc21ecec7e908cbddc228e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b63ac1988407e450a13ebbdb152d924 = $(`<div id="html_2b63ac1988407e450a13ebbdb152d924" style="width: 100.0%; height: 100.0%;">Ресторан: 74220805, Помещение: 3, Ценовая группа: 4, TRX: 9502,                      TRX std: 49.881311034921815, Конверсия: 0.8244332425962, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_4.0</div>`)[0];
+                popup_b93db44e6cc21ecec7e908cbddc228e6.setContent(html_2b63ac1988407e450a13ebbdb152d924);
+            
+        
+
+        marker_e09e5c11e782154648d42560c3770cc1.bindPopup(popup_b93db44e6cc21ecec7e908cbddc228e6)
+        ;
+
+        
+    
+    
+            var marker_ff5e3edbfc4e8706e3a83b2d708cf241 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_b1a4fa9fc48bfc9ad863ac5e8be4b895 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ff5e3edbfc4e8706e3a83b2d708cf241.setIcon(icon_b1a4fa9fc48bfc9ad863ac5e8be4b895);
+        
+    
+        var popup_d402b2efb9871ceab262be2472f18060 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c1d523ff02847ee9c3261345d4687dc = $(`<div id="html_7c1d523ff02847ee9c3261345d4687dc" style="width: 100.0%; height: 100.0%;">Ресторан: 74220825, Помещение: 0, Ценовая группа: 4, TRX: 18267,                      TRX std: 83.8710969420076, Конверсия: 0.8231300702326844, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_7.0</div>`)[0];
+                popup_d402b2efb9871ceab262be2472f18060.setContent(html_7c1d523ff02847ee9c3261345d4687dc);
+            
+        
+
+        marker_ff5e3edbfc4e8706e3a83b2d708cf241.bindPopup(popup_d402b2efb9871ceab262be2472f18060)
+        ;
+
+        
+    
+    
+            var marker_0e25a526714a45f2305db4f652f4d0c7 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_7aa9344f84e5326f15e209b3335572ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0e25a526714a45f2305db4f652f4d0c7.setIcon(icon_7aa9344f84e5326f15e209b3335572ed);
+        
+    
+        var popup_3dadb137c6522f5924ef389e2c485629 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1921ad491ab1f17a5e6650653857e208 = $(`<div id="html_1921ad491ab1f17a5e6650653857e208" style="width: 100.0%; height: 100.0%;">Ресторан: 74220833, Помещение: 0, Ценовая группа: 4, TRX: 14056,                      TRX std: 77.52047186967609, Конверсия: 0.748336633703955, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_3.0</div>`)[0];
+                popup_3dadb137c6522f5924ef389e2c485629.setContent(html_1921ad491ab1f17a5e6650653857e208);
+            
+        
+
+        marker_0e25a526714a45f2305db4f652f4d0c7.bindPopup(popup_3dadb137c6522f5924ef389e2c485629)
+        ;
+
+        
+    
+    
+            var marker_703421e8802068e82c830e06caa80b33 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_cbf2c4626fa31710f4e59f188649c4fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_703421e8802068e82c830e06caa80b33.setIcon(icon_cbf2c4626fa31710f4e59f188649c4fd);
+        
+    
+        var popup_5ef726e90ae498fab485ea242f83ee3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46d0d540754a567bb37af8d703eb12c6 = $(`<div id="html_46d0d540754a567bb37af8d703eb12c6" style="width: 100.0%; height: 100.0%;">Ресторан: 74220922, Помещение: 3, Ценовая группа: 4, TRX: 14460,                      TRX std: 73.9145640720074, Конверсия: 0.8234735864039873, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_10.0</div>`)[0];
+                popup_5ef726e90ae498fab485ea242f83ee3f.setContent(html_46d0d540754a567bb37af8d703eb12c6);
+            
+        
+
+        marker_703421e8802068e82c830e06caa80b33.bindPopup(popup_5ef726e90ae498fab485ea242f83ee3f)
+        ;
+
+        
+    
+    
+            var marker_2cbbd04398aac6deb8474e63f61c96a8 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_9a7220410c2d7559f64b66a48fde5c0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2cbbd04398aac6deb8474e63f61c96a8.setIcon(icon_9a7220410c2d7559f64b66a48fde5c0a);
+        
+    
+        var popup_dfc5999614b8b9c9a6535511ff5eeedf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14e76a2f2a92839dd5e397b8e4ca58a0 = $(`<div id="html_14e76a2f2a92839dd5e397b8e4ca58a0" style="width: 100.0%; height: 100.0%;">Ресторан: 74221007, Помещение: 0, Ценовая группа: 4, TRX: 13898,                      TRX std: 70.3052331945236, Конверсия: 0.7092875396803588, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_3.0</div>`)[0];
+                popup_dfc5999614b8b9c9a6535511ff5eeedf.setContent(html_14e76a2f2a92839dd5e397b8e4ca58a0);
+            
+        
+
+        marker_2cbbd04398aac6deb8474e63f61c96a8.bindPopup(popup_dfc5999614b8b9c9a6535511ff5eeedf)
+        ;
+
+        
+    
+    
+            var marker_60e06a090f46036c3a8d404098503cf3 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_2ac75cbb7141c9a61dfc2a6ba5db2d3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_60e06a090f46036c3a8d404098503cf3.setIcon(icon_2ac75cbb7141c9a61dfc2a6ba5db2d3b);
+        
+    
+        var popup_dc521f47ce23c019c780e10ae05e40e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0dc2a36abd7388b2b8611d35a6f599b = $(`<div id="html_c0dc2a36abd7388b2b8611d35a6f599b" style="width: 100.0%; height: 100.0%;">Ресторан: 74221048, Помещение: 0, Ценовая группа: 4, TRX: 12182,                      TRX std: 77.16488708926326, Конверсия: 0.7336551530885169, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_5.0</div>`)[0];
+                popup_dc521f47ce23c019c780e10ae05e40e3.setContent(html_c0dc2a36abd7388b2b8611d35a6f599b);
+            
+        
+
+        marker_60e06a090f46036c3a8d404098503cf3.bindPopup(popup_dc521f47ce23c019c780e10ae05e40e3)
+        ;
+
+        
+    
+    
+            var marker_cc2636a745879a73b283a1e9b4cd6ae9 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_cf5dc826077cc937e7ff091c58f3f566 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_cc2636a745879a73b283a1e9b4cd6ae9.setIcon(icon_cf5dc826077cc937e7ff091c58f3f566);
+        
+    
+        var popup_cd2ddaa324a91480b90693431d6bf200 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c3402925cb02f21a76d1218264727f7 = $(`<div id="html_0c3402925cb02f21a76d1218264727f7" style="width: 100.0%; height: 100.0%;">Ресторан: 74021515, Помещение: 3, Ценовая группа: 0, TRX: 4614,                      TRX std: 21.8138226164709, Конверсия: 0.759289283196867, АБ Группа: ,                      Cluster: 0.0_1.0_0.0_1.0</div>`)[0];
+                popup_cd2ddaa324a91480b90693431d6bf200.setContent(html_0c3402925cb02f21a76d1218264727f7);
+            
+        
+
+        marker_cc2636a745879a73b283a1e9b4cd6ae9.bindPopup(popup_cd2ddaa324a91480b90693431d6bf200)
+        ;
+
+        
+    
+    
+            var marker_8d4e33b40046fdc5523c9e6261759b37 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_c29c614d7715d15850b7e909cbde73e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_8d4e33b40046fdc5523c9e6261759b37.setIcon(icon_c29c614d7715d15850b7e909cbde73e0);
+        
+    
+        var popup_5b0636f9b669127aed71d34c702a3f8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_315e8e7cffab562c7502ed66cdd1504a = $(`<div id="html_315e8e7cffab562c7502ed66cdd1504a" style="width: 100.0%; height: 100.0%;">Ресторан: 74021654, Помещение: 0, Ценовая группа: 4, TRX: 13053,                      TRX std: 56.7510226465442, Конверсия: 0.8174864934687369, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_8.0</div>`)[0];
+                popup_5b0636f9b669127aed71d34c702a3f8d.setContent(html_315e8e7cffab562c7502ed66cdd1504a);
+            
+        
+
+        marker_8d4e33b40046fdc5523c9e6261759b37.bindPopup(popup_5b0636f9b669127aed71d34c702a3f8d)
+        ;
+
+        
+    
+    
+            var marker_0b8e83ebf8dd56eafa71c8d0c35bb582 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_7d42518a819cd144608ab5a96005ed95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_0b8e83ebf8dd56eafa71c8d0c35bb582.setIcon(icon_7d42518a819cd144608ab5a96005ed95);
+        
+    
+        var popup_600f508fad81ceb0f89a9b464524bc58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e3164f5cb5389f195cbe2cb8c46a130 = $(`<div id="html_3e3164f5cb5389f195cbe2cb8c46a130" style="width: 100.0%; height: 100.0%;">Ресторан: 74021692, Помещение: 3, Ценовая группа: 4, TRX: 18047,                      TRX std: 85.7820648891224, Конверсия: 0.7622018503623889, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_0.0</div>`)[0];
+                popup_600f508fad81ceb0f89a9b464524bc58.setContent(html_3e3164f5cb5389f195cbe2cb8c46a130);
+            
+        
+
+        marker_0b8e83ebf8dd56eafa71c8d0c35bb582.bindPopup(popup_600f508fad81ceb0f89a9b464524bc58)
+        ;
+
+        
+    
+    
+            var marker_b7d14e00adda515c0d8f8218442bc1ed = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_e449a207445f001b76edc12121ed7cac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_b7d14e00adda515c0d8f8218442bc1ed.setIcon(icon_e449a207445f001b76edc12121ed7cac);
+        
+    
+        var popup_e6f59d695be825dee9ed7a9fde35277d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_903980408801f7fe1280a783e5777945 = $(`<div id="html_903980408801f7fe1280a783e5777945" style="width: 100.0%; height: 100.0%;">Ресторан: 74321708, Помещение: 0, Ценовая группа: 4, TRX: 10162,                      TRX std: 69.09097377112008, Конверсия: 0.7749364873596393, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_4.0</div>`)[0];
+                popup_e6f59d695be825dee9ed7a9fde35277d.setContent(html_903980408801f7fe1280a783e5777945);
+            
+        
+
+        marker_b7d14e00adda515c0d8f8218442bc1ed.bindPopup(popup_e6f59d695be825dee9ed7a9fde35277d)
+        ;
+
+        
+    
+    
+            var marker_4fd32705cd524729422faaf92517748d = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_fb055a5cda363cc519a05432e8ff558a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_4fd32705cd524729422faaf92517748d.setIcon(icon_fb055a5cda363cc519a05432e8ff558a);
+        
+    
+        var popup_4fc2fd11229222335f3345a88409dc6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35a58236c53b5e140f72514fba0c9ea1 = $(`<div id="html_35a58236c53b5e140f72514fba0c9ea1" style="width: 100.0%; height: 100.0%;">Ресторан: 74321742, Помещение: 0, Ценовая группа: 4, TRX: 10123,                      TRX std: 82.35864475116274, Конверсия: 0.7256289737479888, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_4.0</div>`)[0];
+                popup_4fc2fd11229222335f3345a88409dc6e.setContent(html_35a58236c53b5e140f72514fba0c9ea1);
+            
+        
+
+        marker_4fd32705cd524729422faaf92517748d.bindPopup(popup_4fc2fd11229222335f3345a88409dc6e)
+        ;
+
+        
+    
+    
+            var marker_4d58511dae4f7eae349ea2c0e0e797c3 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_17d00b0121361ba5cb09e8d84fdf25a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_4d58511dae4f7eae349ea2c0e0e797c3.setIcon(icon_17d00b0121361ba5cb09e8d84fdf25a1);
+        
+    
+        var popup_da30142042631586e4b7ca0360c4eb80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9e9e941065971b741b77eaa941ab47a = $(`<div id="html_e9e9e941065971b741b77eaa941ab47a" style="width: 100.0%; height: 100.0%;">Ресторан: 74021748, Помещение: 3, Ценовая группа: 4, TRX: 7783,                      TRX std: 43.33139334388876, Конверсия: 0.7655784203996564, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_2.0</div>`)[0];
+                popup_da30142042631586e4b7ca0360c4eb80.setContent(html_e9e9e941065971b741b77eaa941ab47a);
+            
+        
+
+        marker_4d58511dae4f7eae349ea2c0e0e797c3.bindPopup(popup_da30142042631586e4b7ca0360c4eb80)
+        ;
+
+        
+    
+    
+            var marker_426c40a01021da560138cf71b8cd25ee = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_ff31b6d364da53df465039a698a8052a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_426c40a01021da560138cf71b8cd25ee.setIcon(icon_ff31b6d364da53df465039a698a8052a);
+        
+    
+        var popup_f133b68e72ecc741e6c8770ec46a7af6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f87905744530dc804258ffd7b8560ee = $(`<div id="html_4f87905744530dc804258ffd7b8560ee" style="width: 100.0%; height: 100.0%;">Ресторан: 74021751, Помещение: 3, Ценовая группа: 4, TRX: 18115,                      TRX std: 126.20762452723775, Конверсия: 0.7513917663970339, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_0.0</div>`)[0];
+                popup_f133b68e72ecc741e6c8770ec46a7af6.setContent(html_4f87905744530dc804258ffd7b8560ee);
+            
+        
+
+        marker_426c40a01021da560138cf71b8cd25ee.bindPopup(popup_f133b68e72ecc741e6c8770ec46a7af6)
+        ;
+
+        
+    
+    
+            var marker_5aadb8352a5713ca749a27e6c24b521e = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_190fe3dcbb32c07ba6f791d395926b8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5aadb8352a5713ca749a27e6c24b521e.setIcon(icon_190fe3dcbb32c07ba6f791d395926b8a);
+        
+    
+        var popup_947a4988248f177287b28b9e452b6512 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fe1d69471dac14e901533bac4d83ea1 = $(`<div id="html_3fe1d69471dac14e901533bac4d83ea1" style="width: 100.0%; height: 100.0%;">Ресторан: 74021753, Помещение: 0, Ценовая группа: 4, TRX: 14349,                      TRX std: 78.36169032938349, Конверсия: 0.7590024624538428, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_6.0</div>`)[0];
+                popup_947a4988248f177287b28b9e452b6512.setContent(html_3fe1d69471dac14e901533bac4d83ea1);
+            
+        
+
+        marker_5aadb8352a5713ca749a27e6c24b521e.bindPopup(popup_947a4988248f177287b28b9e452b6512)
+        ;
+
+        
+    
+    
+            var marker_713c8276b1f942d67832bdcfc0143170 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_fa82fa19196948356c3503f9b2bd4f8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_713c8276b1f942d67832bdcfc0143170.setIcon(icon_fa82fa19196948356c3503f9b2bd4f8b);
+        
+    
+        var popup_3108c1535f0f0465821d94f9f8805fa7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61e50ef018e96d671d17a4e3e2e147a3 = $(`<div id="html_61e50ef018e96d671d17a4e3e2e147a3" style="width: 100.0%; height: 100.0%;">Ресторан: 74021758, Помещение: 3, Ценовая группа: 4, TRX: 11978,                      TRX std: 58.27748848535257, Конверсия: 0.7092083023008401, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_1.0</div>`)[0];
+                popup_3108c1535f0f0465821d94f9f8805fa7.setContent(html_61e50ef018e96d671d17a4e3e2e147a3);
+            
+        
+
+        marker_713c8276b1f942d67832bdcfc0143170.bindPopup(popup_3108c1535f0f0465821d94f9f8805fa7)
+        ;
+
+        
+    
+    
+            var marker_9016ba730167c3cc2af1661d18999174 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_288e6bd1e6b15e2ccf59e0e0febe8881 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_9016ba730167c3cc2af1661d18999174.setIcon(icon_288e6bd1e6b15e2ccf59e0e0febe8881);
+        
+    
+        var popup_60d8fe5df6b9d140b993e4fc22f74676 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0dcd2b1dee1070aceed4a4b326b5af89 = $(`<div id="html_0dcd2b1dee1070aceed4a4b326b5af89" style="width: 100.0%; height: 100.0%;">Ресторан: 74021777, Помещение: 3, Ценовая группа: 4, TRX: 11558,                      TRX std: 73.0212829894378, Конверсия: 0.7122371637170224, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_9.0</div>`)[0];
+                popup_60d8fe5df6b9d140b993e4fc22f74676.setContent(html_0dcd2b1dee1070aceed4a4b326b5af89);
+            
+        
+
+        marker_9016ba730167c3cc2af1661d18999174.bindPopup(popup_60d8fe5df6b9d140b993e4fc22f74676)
+        ;
+
+        
+    
+    
+            var marker_4fd5fcc27849757903760a5b3abf9968 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_436bd132833b18e33c7d7a7378aa008c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_4fd5fcc27849757903760a5b3abf9968.setIcon(icon_436bd132833b18e33c7d7a7378aa008c);
+        
+    
+        var popup_e0680c41a07764fdd3b57d0542be8b71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c599185ea771b554576935a428b5bb68 = $(`<div id="html_c599185ea771b554576935a428b5bb68" style="width: 100.0%; height: 100.0%;">Ресторан: 74021801, Помещение: 3, Ценовая группа: 4, TRX: 12082,                      TRX std: 55.61794575246655, Конверсия: 0.6628703490032494, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_1.0</div>`)[0];
+                popup_e0680c41a07764fdd3b57d0542be8b71.setContent(html_c599185ea771b554576935a428b5bb68);
+            
+        
+
+        marker_4fd5fcc27849757903760a5b3abf9968.bindPopup(popup_e0680c41a07764fdd3b57d0542be8b71)
+        ;
+
+        
+    
+    
+            var marker_c6b8f3244bc2a5b42983618dea43f0e0 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_d0993faecddf83361585d01aad2f3f05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c6b8f3244bc2a5b42983618dea43f0e0.setIcon(icon_d0993faecddf83361585d01aad2f3f05);
+        
+    
+        var popup_535eec34f8fd55c48e8dd8ae61a687e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3689ae5dcad4a501be7023bea45c8cce = $(`<div id="html_3689ae5dcad4a501be7023bea45c8cce" style="width: 100.0%; height: 100.0%;">Ресторан: 74021845, Помещение: 3, Ценовая группа: 4, TRX: 16591,                      TRX std: 85.27871524116063, Конверсия: 0.7599807769590385, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_8.0</div>`)[0];
+                popup_535eec34f8fd55c48e8dd8ae61a687e5.setContent(html_3689ae5dcad4a501be7023bea45c8cce);
+            
+        
+
+        marker_c6b8f3244bc2a5b42983618dea43f0e0.bindPopup(popup_535eec34f8fd55c48e8dd8ae61a687e5)
+        ;
+
+        
+    
+    
+            var marker_2999cdc6184e9a27038867c6b54f6edd = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_4b5808fbf634efcd710311e23f031067 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2999cdc6184e9a27038867c6b54f6edd.setIcon(icon_4b5808fbf634efcd710311e23f031067);
+        
+    
+        var popup_8d602666c018f008cff936bdd9716521 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_661995c687e0c23141e4c3feb7946583 = $(`<div id="html_661995c687e0c23141e4c3feb7946583" style="width: 100.0%; height: 100.0%;">Ресторан: 74321817, Помещение: 0, Ценовая группа: 4, TRX: 14448,                      TRX std: 131.68171926265973, Конверсия: 0.7703468292475555, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_6.0</div>`)[0];
+                popup_8d602666c018f008cff936bdd9716521.setContent(html_661995c687e0c23141e4c3feb7946583);
+            
+        
+
+        marker_2999cdc6184e9a27038867c6b54f6edd.bindPopup(popup_8d602666c018f008cff936bdd9716521)
+        ;
+
+        
+    
+    
+            var marker_61a05ff83224152af77aaabaa1fc0b70 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_bcbd60bc16726eb334846ac0ee77cc74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_61a05ff83224152af77aaabaa1fc0b70.setIcon(icon_bcbd60bc16726eb334846ac0ee77cc74);
+        
+    
+        var popup_de0d9ca8f74edc0496f394fe25a78910 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49cbac2d3072250989ae6a520a0c9a76 = $(`<div id="html_49cbac2d3072250989ae6a520a0c9a76" style="width: 100.0%; height: 100.0%;">Ресторан: 74021858, Помещение: 3, Ценовая группа: 4, TRX: 18687,                      TRX std: 113.4073049564984, Конверсия: 0.7618385719597304, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_3.0</div>`)[0];
+                popup_de0d9ca8f74edc0496f394fe25a78910.setContent(html_49cbac2d3072250989ae6a520a0c9a76);
+            
+        
+
+        marker_61a05ff83224152af77aaabaa1fc0b70.bindPopup(popup_de0d9ca8f74edc0496f394fe25a78910)
+        ;
+
+        
+    
+    
+            var marker_ecd379e27dde16bfba02c540582fa258 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_2207eb0413a6ff450ab255eb132fa9c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ecd379e27dde16bfba02c540582fa258.setIcon(icon_2207eb0413a6ff450ab255eb132fa9c6);
+        
+    
+        var popup_8394a40bea4a205e13546326def72ee6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e910fe89dc7941bedc09c5b603d55b0 = $(`<div id="html_7e910fe89dc7941bedc09c5b603d55b0" style="width: 100.0%; height: 100.0%;">Ресторан: 74021955, Помещение: 0, Ценовая группа: 4, TRX: 9166,                      TRX std: 52.10169951865132, Конверсия: 0.7406224190995379, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_10.0</div>`)[0];
+                popup_8394a40bea4a205e13546326def72ee6.setContent(html_7e910fe89dc7941bedc09c5b603d55b0);
+            
+        
+
+        marker_ecd379e27dde16bfba02c540582fa258.bindPopup(popup_8394a40bea4a205e13546326def72ee6)
+        ;
+
+        
+    
+    
+            var marker_228d6dcf141df8ff9688cdfc9fc7431a = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_a40284063066c73a45465088d0e2a587 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_228d6dcf141df8ff9688cdfc9fc7431a.setIcon(icon_a40284063066c73a45465088d0e2a587);
+        
+    
+        var popup_549c2ecda95fd903666ffd01090362bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bbd8f555651893e21910fd74d92d03b = $(`<div id="html_8bbd8f555651893e21910fd74d92d03b" style="width: 100.0%; height: 100.0%;">Ресторан: 74021956, Помещение: 3, Ценовая группа: 4, TRX: 16705,                      TRX std: 85.93059068829972, Конверсия: 0.793470943786989, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_8.0</div>`)[0];
+                popup_549c2ecda95fd903666ffd01090362bc.setContent(html_8bbd8f555651893e21910fd74d92d03b);
+            
+        
+
+        marker_228d6dcf141df8ff9688cdfc9fc7431a.bindPopup(popup_549c2ecda95fd903666ffd01090362bc)
+        ;
+
+        
+    
+    
+            var marker_f397ca30250fd7d2931a8a347b54b531 = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_5a3c9f48028e41da00e8b0180db3cc50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_f397ca30250fd7d2931a8a347b54b531.setIcon(icon_5a3c9f48028e41da00e8b0180db3cc50);
+        
+    
+        var popup_1ec19f0799e43c8586b7527a56505166 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7bcbec7941babe41aa3c2ff2033ccc5 = $(`<div id="html_f7bcbec7941babe41aa3c2ff2033ccc5" style="width: 100.0%; height: 100.0%;">Ресторан: 74321859, Помещение: 0, Ценовая группа: 4, TRX: 12963,                      TRX std: 137.26147458779187, Конверсия: 0.7265399819235407, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_8.0</div>`)[0];
+                popup_1ec19f0799e43c8586b7527a56505166.setContent(html_f7bcbec7941babe41aa3c2ff2033ccc5);
+            
+        
+
+        marker_f397ca30250fd7d2931a8a347b54b531.bindPopup(popup_1ec19f0799e43c8586b7527a56505166)
+        ;
+
+        
+    
+    
+            var marker_885777fec7a293b66d26e9699b25d106 = L.marker(
+                [54.5101087, 36.2598115],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_da46caa746f6badc05b827e53bc24339 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_885777fec7a293b66d26e9699b25d106.setIcon(icon_da46caa746f6badc05b827e53bc24339);
+        
+    
+        var popup_646f931f9d6e8cd2b14294f636fcd846 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4deee05d1e373212c21d2beaf2329d4 = $(`<div id="html_e4deee05d1e373212c21d2beaf2329d4" style="width: 100.0%; height: 100.0%;">Ресторан: 74020558, Помещение: 3, Ценовая группа: 0, TRX: 13532,                      TRX std: 68.09758220197239, Конверсия: 0.5360450455890137, АБ Группа: ,                      Cluster: 0.0_1.0_0.0_0.0</div>`)[0];
+                popup_646f931f9d6e8cd2b14294f636fcd846.setContent(html_e4deee05d1e373212c21d2beaf2329d4);
+            
+        
+
+        marker_885777fec7a293b66d26e9699b25d106.bindPopup(popup_646f931f9d6e8cd2b14294f636fcd846)
+        ;
+
+        
+    
+    
+            var marker_a6a52194d20a73b6ef81cd0f5e8faf6b = L.marker(
+                [55.8083278, 38.9790038],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_47fc156f02fe7790aa480480dba6001d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_a6a52194d20a73b6ef81cd0f5e8faf6b.setIcon(icon_47fc156f02fe7790aa480480dba6001d);
+        
+    
+        var popup_e1eb609379991a97cd9e9da7f6bc96aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82596f9d64071ce9bc4c215fd8f46a6a = $(`<div id="html_82596f9d64071ce9bc4c215fd8f46a6a" style="width: 100.0%; height: 100.0%;">Ресторан: 74321828, Помещение: 0, Ценовая группа: 4, TRX: 12084,                      TRX std: 100.10137718476064, Конверсия: 0.7169579575292966, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_5.0</div>`)[0];
+                popup_e1eb609379991a97cd9e9da7f6bc96aa.setContent(html_82596f9d64071ce9bc4c215fd8f46a6a);
+            
+        
+
+        marker_a6a52194d20a73b6ef81cd0f5e8faf6b.bindPopup(popup_e1eb609379991a97cd9e9da7f6bc96aa)
+        ;
+
+        
+    
+    
+            var marker_46200490fe913c85303887189580b52e = L.marker(
+                [55.6783142, 37.89377],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_36f6919cbe4b944eccd2c1e407a649b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_46200490fe913c85303887189580b52e.setIcon(icon_36f6919cbe4b944eccd2c1e407a649b0);
+        
+    
+        var popup_803ed4276ccb73880a2350e43da49a89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f5691b5e133ec71e554825c1ebd7ed3 = $(`<div id="html_2f5691b5e133ec71e554825c1ebd7ed3" style="width: 100.0%; height: 100.0%;">Ресторан: 74213276, Помещение: 3, Ценовая группа: 4, TRX: 16848,                      TRX std: 73.16052491620765, Конверсия: 0.8049917093689721, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_6.0</div>`)[0];
+                popup_803ed4276ccb73880a2350e43da49a89.setContent(html_2f5691b5e133ec71e554825c1ebd7ed3);
+            
+        
+
+        marker_46200490fe913c85303887189580b52e.bindPopup(popup_803ed4276ccb73880a2350e43da49a89)
+        ;
+
+        
+    
+    
+            var marker_412c923159af214beb55a2db06fd6592 = L.marker(
+                [55.6783142, 37.89377],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_525924ecb23bb87ec633214ddf5ae184 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_412c923159af214beb55a2db06fd6592.setIcon(icon_525924ecb23bb87ec633214ddf5ae184);
+        
+    
+        var popup_7bb51e4c942366f558f9b6268d28737a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e25a0632a440249fc108c4a7202008e8 = $(`<div id="html_e25a0632a440249fc108c4a7202008e8" style="width: 100.0%; height: 100.0%;">Ресторан: 74321814, Помещение: 0, Ценовая группа: 4, TRX: 8518,                      TRX std: 42.5252099784266, Конверсия: 0.8004239482839125, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_9.0</div>`)[0];
+                popup_7bb51e4c942366f558f9b6268d28737a.setContent(html_e25a0632a440249fc108c4a7202008e8);
+            
+        
+
+        marker_412c923159af214beb55a2db06fd6592.bindPopup(popup_7bb51e4c942366f558f9b6268d28737a)
+        ;
+
+        
+    
+    
+            var marker_2db7a49d1a64e42e3b8d6a3fb6c424d8 = L.marker(
+                [55.8917293, 37.4396994],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_dbb4f0742e2978a0d45c939618246457 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_2db7a49d1a64e42e3b8d6a3fb6c424d8.setIcon(icon_dbb4f0742e2978a0d45c939618246457);
+        
+    
+        var popup_da1e07130e5dee4bf966d8154b3f258f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be770aac9705ef68974c842bef4836e4 = $(`<div id="html_be770aac9705ef68974c842bef4836e4" style="width: 100.0%; height: 100.0%;">Ресторан: 74013324, Помещение: 3, Ценовая группа: 4, TRX: 7721,                      TRX std: 48.63018983520959, Конверсия: 0.7655258585878357, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_2.0</div>`)[0];
+                popup_da1e07130e5dee4bf966d8154b3f258f.setContent(html_be770aac9705ef68974c842bef4836e4);
+            
+        
+
+        marker_2db7a49d1a64e42e3b8d6a3fb6c424d8.bindPopup(popup_da1e07130e5dee4bf966d8154b3f258f)
+        ;
+
+        
+    
+    
+            var marker_14da6af4cfc37bb572abb03f3cef05cb = L.marker(
+                [56.0104274, 37.8461892],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_d26b09326ee7779bfc4bf0d5f7adb2b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_14da6af4cfc37bb572abb03f3cef05cb.setIcon(icon_d26b09326ee7779bfc4bf0d5f7adb2b8);
+        
+    
+        var popup_80b01a5273665915cae93f09e9bba461 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e512376da9656355da8d607fc92d3387 = $(`<div id="html_e512376da9656355da8d607fc92d3387" style="width: 100.0%; height: 100.0%;">Ресторан: 74021536, Помещение: 3, Ценовая группа: 4, TRX: 18181,                      TRX std: 87.32614665565124, Конверсия: 0.844636274123623, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_0.0</div>`)[0];
+                popup_80b01a5273665915cae93f09e9bba461.setContent(html_e512376da9656355da8d607fc92d3387);
+            
+        
+
+        marker_14da6af4cfc37bb572abb03f3cef05cb.bindPopup(popup_80b01a5273665915cae93f09e9bba461)
+        ;
+
+        
+    
+    
+            var marker_879c459c7f028565bf835bdc51a7ec2f = L.marker(
+                [56.0104274, 37.8461892],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_cbd30278216d9befc64eeabbafd5b21a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_879c459c7f028565bf835bdc51a7ec2f.setIcon(icon_cbd30278216d9befc64eeabbafd5b21a);
+        
+    
+        var popup_fe40308c6719acbf713ab240a9e40391 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e2ba6c6e958338b9cb47f5f388df2bb = $(`<div id="html_4e2ba6c6e958338b9cb47f5f388df2bb" style="width: 100.0%; height: 100.0%;">Ресторан: 74221322, Помещение: 0, Ценовая группа: 4, TRX: 11874,                      TRX std: 124.91770975536784, Конверсия: 0.8100826349873297, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_2.0</div>`)[0];
+                popup_fe40308c6719acbf713ab240a9e40391.setContent(html_4e2ba6c6e958338b9cb47f5f388df2bb);
+            
+        
+
+        marker_879c459c7f028565bf835bdc51a7ec2f.bindPopup(popup_fe40308c6719acbf713ab240a9e40391)
+        ;
+
+        
+    
+    
+            var marker_5ba81286f1528f44cf356fffef05ef73 = L.marker(
+                [55.9145993, 36.8595482],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_3dd7afc4932c35c4fc45187d3bf5e3d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5ba81286f1528f44cf356fffef05ef73.setIcon(icon_3dd7afc4932c35c4fc45187d3bf5e3d9);
+        
+    
+        var popup_f6bce818b039f3b402ba216072e9ce66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79450f87c18bf8aa88c33ebae3621a29 = $(`<div id="html_79450f87c18bf8aa88c33ebae3621a29" style="width: 100.0%; height: 100.0%;">Ресторан: 74221426, Помещение: 3, Ценовая группа: 4, TRX: 16709,                      TRX std: 81.13930670600921, Конверсия: 0.812641246157408, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_8.0</div>`)[0];
+                popup_f6bce818b039f3b402ba216072e9ce66.setContent(html_79450f87c18bf8aa88c33ebae3621a29);
+            
+        
+
+        marker_5ba81286f1528f44cf356fffef05ef73.bindPopup(popup_f6bce818b039f3b402ba216072e9ce66)
+        ;
+
+        
+    
+    
+            var marker_3956d9135d88256f491b093dbec9e846 = L.marker(
+                [55.7997662, 37.9373707],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_30ff0eab18304fa8a1a2ea0f91408cef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_3956d9135d88256f491b093dbec9e846.setIcon(icon_30ff0eab18304fa8a1a2ea0f91408cef);
+        
+    
+        var popup_de9f28e52bc736f1bc41c4e3e1449659 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e76af803c0ab937bd3d65104b55f048 = $(`<div id="html_4e76af803c0ab937bd3d65104b55f048" style="width: 100.0%; height: 100.0%;">Ресторан: 74221037, Помещение: 3, Ценовая группа: 4, TRX: 14552,                      TRX std: 65.04393155845864, Конверсия: 0.8024028213577195, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_10.0</div>`)[0];
+                popup_de9f28e52bc736f1bc41c4e3e1449659.setContent(html_4e76af803c0ab937bd3d65104b55f048);
+            
+        
+
+        marker_3956d9135d88256f491b093dbec9e846.bindPopup(popup_de9f28e52bc736f1bc41c4e3e1449659)
+        ;
+
+        
+    
+    
+            var marker_0a09b1325102fb725124b0ef2e616c8d = L.marker(
+                [55.4368213, 37.7680693],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_4db5ee847bf30115e9b14b30ed1376bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a09b1325102fb725124b0ef2e616c8d.setIcon(icon_4db5ee847bf30115e9b14b30ed1376bd);
+        
+    
+        var popup_ffa2b10cc77b137d838ab5cbd5328e96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a8481c5f3122f87e98c1d509c63a1ac = $(`<div id="html_6a8481c5f3122f87e98c1d509c63a1ac" style="width: 100.0%; height: 100.0%;">Ресторан: 74321794, Помещение: 3, Ценовая группа: 4, TRX: 16592,                      TRX std: 74.76039839326566, Конверсия: 0.8150945256786314, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_8.0</div>`)[0];
+                popup_ffa2b10cc77b137d838ab5cbd5328e96.setContent(html_6a8481c5f3122f87e98c1d509c63a1ac);
+            
+        
+
+        marker_0a09b1325102fb725124b0ef2e616c8d.bindPopup(popup_ffa2b10cc77b137d838ab5cbd5328e96)
+        ;
+
+        
+    
+    
+            var marker_d7cd2034cddddabb113ddeebe52e0ca5 = L.marker(
+                [55.9206499, 37.9915576],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_974be3d523bacd128413dde1d3d0446b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_d7cd2034cddddabb113ddeebe52e0ca5.setIcon(icon_974be3d523bacd128413dde1d3d0446b);
+        
+    
+        var popup_b361a4cae6f07b506e5f2862dc43169b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9b6102405427477534244829e2fcddc = $(`<div id="html_f9b6102405427477534244829e2fcddc" style="width: 100.0%; height: 100.0%;">Ресторан: 74220705, Помещение: 3, Ценовая группа: 4, TRX: 12075,                      TRX std: 60.816113194285535, Конверсия: 0.7694090078123754, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_1.0</div>`)[0];
+                popup_b361a4cae6f07b506e5f2862dc43169b.setContent(html_f9b6102405427477534244829e2fcddc);
+            
+        
+
+        marker_d7cd2034cddddabb113ddeebe52e0ca5.bindPopup(popup_b361a4cae6f07b506e5f2862dc43169b)
+        ;
+
+        
+    
+    
+            var marker_baae136d5b409c2fc643b447f7ab987f = L.marker(
+                [55.678223, 37.2668096],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_22cf6ff8c408814fb07cc01d8878aced = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_baae136d5b409c2fc643b447f7ab987f.setIcon(icon_22cf6ff8c408814fb07cc01d8878aced);
+        
+    
+        var popup_840879324f2267fd1baf819ae1c918b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d463e7beb9b56d07a0381b72d5e4cff = $(`<div id="html_5d463e7beb9b56d07a0381b72d5e4cff" style="width: 100.0%; height: 100.0%;">Ресторан: 74220643, Помещение: 0, Ценовая группа: 4, TRX: 9248,                      TRX std: 65.80281168052515, Конверсия: 0.7424349220483726, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_10.0</div>`)[0];
+                popup_840879324f2267fd1baf819ae1c918b1.setContent(html_5d463e7beb9b56d07a0381b72d5e4cff);
+            
+        
+
+        marker_baae136d5b409c2fc643b447f7ab987f.bindPopup(popup_840879324f2267fd1baf819ae1c918b1)
+        ;
+
+        
+    
+    
+            var marker_6d138155bda2b1ce6024c515c6396d1a = L.marker(
+                [55.8217545, 37.3400897],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_bd6a46e43e375f8952d973de0bfeed3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_6d138155bda2b1ce6024c515c6396d1a.setIcon(icon_bd6a46e43e375f8952d973de0bfeed3d);
+        
+    
+        var popup_a8a797eb0bd8ec6b168bd08484cbcc5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc0b87e518184c165a05219e5fa6ad12 = $(`<div id="html_fc0b87e518184c165a05219e5fa6ad12" style="width: 100.0%; height: 100.0%;">Ресторан: 74321688, Помещение: 0, Ценовая группа: 4, TRX: 11576,                      TRX std: 97.93953686946612, Конверсия: 0.7496498994432189, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_11.0</div>`)[0];
+                popup_a8a797eb0bd8ec6b168bd08484cbcc5c.setContent(html_fc0b87e518184c165a05219e5fa6ad12);
+            
+        
+
+        marker_6d138155bda2b1ce6024c515c6396d1a.bindPopup(popup_a8a797eb0bd8ec6b168bd08484cbcc5c)
+        ;
+
+        
+    
+    
+            var marker_b3352f267c542a10c318b580c45280f1 = L.marker(
+                [55.7622453, 37.856555],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_e618e15f90af5483c95113c2954ae434 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_b3352f267c542a10c318b580c45280f1.setIcon(icon_e618e15f90af5483c95113c2954ae434);
+        
+    
+        var popup_f89cb8ae04f35146488aba29b6f5ad2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b5a6a53d7266ae9402b95530ff71d9d = $(`<div id="html_8b5a6a53d7266ae9402b95530ff71d9d" style="width: 100.0%; height: 100.0%;">Ресторан: 74221065, Помещение: 3, Ценовая группа: 4, TRX: 14123,                      TRX std: 71.6090620621689, Конверсия: 0.8070012356440949, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_5.0</div>`)[0];
+                popup_f89cb8ae04f35146488aba29b6f5ad2e.setContent(html_8b5a6a53d7266ae9402b95530ff71d9d);
+            
+        
+
+        marker_b3352f267c542a10c318b580c45280f1.bindPopup(popup_f89cb8ae04f35146488aba29b6f5ad2e)
+        ;
+
+        
+    
+    
+            var marker_4f440fb144bc6e070c5918ddc9474c0a = L.marker(
+                [55.7622453, 37.856555],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_d441c71d6f621b19942938a105397bc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_4f440fb144bc6e070c5918ddc9474c0a.setIcon(icon_d441c71d6f621b19942938a105397bc1);
+        
+    
+        var popup_d884ad17ee22a339acd2c58ff5208956 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1c364b27894f1859add0620a949b87f = $(`<div id="html_a1c364b27894f1859add0620a949b87f" style="width: 100.0%; height: 100.0%;">Ресторан: 74321706, Помещение: 0, Ценовая группа: 4, TRX: 10082,                      TRX std: 94.94379355617244, Конверсия: 0.7336729582867977, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_4.0</div>`)[0];
+                popup_d884ad17ee22a339acd2c58ff5208956.setContent(html_a1c364b27894f1859add0620a949b87f);
+            
+        
+
+        marker_4f440fb144bc6e070c5918ddc9474c0a.bindPopup(popup_d884ad17ee22a339acd2c58ff5208956)
+        ;
+
+        
+    
+    
+            var marker_6a62fb7adcfe1b4b1e640bb5bdef71ee = L.marker(
+                [54.9155247, 37.4195533],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_be31603cf46ab76d5491e5a71bdc91f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_6a62fb7adcfe1b4b1e640bb5bdef71ee.setIcon(icon_be31603cf46ab76d5491e5a71bdc91f7);
+        
+    
+        var popup_69a8dcade142471c3cf357d1fb3cd267 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_064f42bacbce1dff2e266198d9befd22 = $(`<div id="html_064f42bacbce1dff2e266198d9befd22" style="width: 100.0%; height: 100.0%;">Ресторан: 74221488, Помещение: 0, Ценовая группа: 4, TRX: 13043,                      TRX std: 105.37570925147136, Конверсия: 0.7398718755539917, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_8.0</div>`)[0];
+                popup_69a8dcade142471c3cf357d1fb3cd267.setContent(html_064f42bacbce1dff2e266198d9befd22);
+            
+        
+
+        marker_6a62fb7adcfe1b4b1e640bb5bdef71ee.bindPopup(popup_69a8dcade142471c3cf357d1fb3cd267)
+        ;
+
+        
+    
+    
+            var marker_91f5fa76cfa72d65a8307a786ad67094 = L.marker(
+                [55.322518, 38.6816824],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_ab11389b42d8750a66a094c393594712 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_91f5fa76cfa72d65a8307a786ad67094.setIcon(icon_ab11389b42d8750a66a094c393594712);
+        
+    
+        var popup_1ab8aeed87560b873c3035313966a7e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b01706adfde40a063442075f9202d8c7 = $(`<div id="html_b01706adfde40a063442075f9202d8c7" style="width: 100.0%; height: 100.0%;">Ресторан: 74321793, Помещение: 3, Ценовая группа: 4, TRX: 13249,                      TRX std: 75.49669281873487, Конверсия: 0.7969131292893763, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_7.0</div>`)[0];
+                popup_1ab8aeed87560b873c3035313966a7e8.setContent(html_b01706adfde40a063442075f9202d8c7);
+            
+        
+
+        marker_91f5fa76cfa72d65a8307a786ad67094.bindPopup(popup_1ab8aeed87560b873c3035313966a7e8)
+        ;
+
+        
+    
+    
+            var marker_e4bf38b7548de0919590f1cdd3975488 = L.marker(
+                [55.4308841, 37.5453056],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_c3a63a8b1f46f029e04d5d87dd217883 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e4bf38b7548de0919590f1cdd3975488.setIcon(icon_c3a63a8b1f46f029e04d5d87dd217883);
+        
+    
+        var popup_62c986b0a95c4ef9f233b1f133083c96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ba7cff765aefd1a162b29fb0e158f14 = $(`<div id="html_3ba7cff765aefd1a162b29fb0e158f14" style="width: 100.0%; height: 100.0%;">Ресторан: 74321760, Помещение: 0, Ценовая группа: 4, TRX: 11815,                      TRX std: 83.07091514095586, Конверсия: 0.7877957513003399, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_2.0</div>`)[0];
+                popup_62c986b0a95c4ef9f233b1f133083c96.setContent(html_3ba7cff765aefd1a162b29fb0e158f14);
+            
+        
+
+        marker_e4bf38b7548de0919590f1cdd3975488.bindPopup(popup_62c986b0a95c4ef9f233b1f133083c96)
+        ;
+
+        
+    
+    
+            var marker_5cb98683735e5087f8a527af255f0afa = L.marker(
+                [55.6149602, 36.9887625],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_3f1b8244538efe156858963f0c643f9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_5cb98683735e5087f8a527af255f0afa.setIcon(icon_3f1b8244538efe156858963f0c643f9b);
+        
+    
+        var popup_fd9a4c59bbe6762ca229487d2fdcf151 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d14faf0ef18319ff8f8ac3b45fd9a1ba = $(`<div id="html_d14faf0ef18319ff8f8ac3b45fd9a1ba" style="width: 100.0%; height: 100.0%;">Ресторан: 74221043, Помещение: 3, Ценовая группа: 4, TRX: 13249,                      TRX std: 70.28005649437206, Конверсия: 0.733373779383994, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_7.0</div>`)[0];
+                popup_fd9a4c59bbe6762ca229487d2fdcf151.setContent(html_d14faf0ef18319ff8f8ac3b45fd9a1ba);
+            
+        
+
+        marker_5cb98683735e5087f8a527af255f0afa.bindPopup(popup_fd9a4c59bbe6762ca229487d2fdcf151)
+        ;
+
+        
+    
+    
+            var marker_2c1f2771de97afc311218254bfec1946 = L.marker(
+                [55.1426603, 37.4545328],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_b385f62e1371025874174f913d3ca0ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2c1f2771de97afc311218254bfec1946.setIcon(icon_b385f62e1371025874174f913d3ca0ff);
+        
+    
+        var popup_9f78872a57bb61c5b96563d586e19989 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_568ff80f59777f79debd5add63cc6f07 = $(`<div id="html_568ff80f59777f79debd5add63cc6f07" style="width: 100.0%; height: 100.0%;">Ресторан: 74221272, Помещение: 0, Ценовая группа: 4, TRX: 14354,                      TRX std: 107.39531826837198, Конверсия: 0.7809473006907255, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_6.0</div>`)[0];
+                popup_9f78872a57bb61c5b96563d586e19989.setContent(html_568ff80f59777f79debd5add63cc6f07);
+            
+        
+
+        marker_2c1f2771de97afc311218254bfec1946.bindPopup(popup_9f78872a57bb61c5b96563d586e19989)
+        ;
+
+        
+    
+    
+            var marker_434c60f45153903f780da68a905162dc = L.marker(
+                [55.3842784, 36.723507],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_8b6cd2bedd4bdfbd433db74780b3ab2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_434c60f45153903f780da68a905162dc.setIcon(icon_8b6cd2bedd4bdfbd433db74780b3ab2d);
+        
+    
+        var popup_3e79edd4efd05e9c9caccafc1cb7d95e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_543f180e17c67625a99f033b4741a213 = $(`<div id="html_543f180e17c67625a99f033b4741a213" style="width: 100.0%; height: 100.0%;">Ресторан: 74221293, Помещение: 0, Ценовая группа: 4, TRX: 18888,                      TRX std: 111.3980365912747, Конверсия: 0.7521934124603998, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_1.0</div>`)[0];
+                popup_3e79edd4efd05e9c9caccafc1cb7d95e.setContent(html_543f180e17c67625a99f033b4741a213);
+            
+        
+
+        marker_434c60f45153903f780da68a905162dc.bindPopup(popup_3e79edd4efd05e9c9caccafc1cb7d95e)
+        ;
+
+        
+    
+    
+            var marker_af039a66d3de0838d8070a6b63d1d75c = L.marker(
+                [56.730941, 37.528016],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_473f64da738342bd44207afc0b569a49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_af039a66d3de0838d8070a6b63d1d75c.setIcon(icon_473f64da738342bd44207afc0b569a49);
+        
+    
+        var popup_47885b1be0009b5eab419f285c8aa24e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be9a84e7945d3653159a455c8a821836 = $(`<div id="html_be9a84e7945d3653159a455c8a821836" style="width: 100.0%; height: 100.0%;">Ресторан: 74021513, Помещение: 3, Ценовая группа: 0, TRX: 4713,                      TRX std: 30.145572137223063, Конверсия: 0.7693043285286117, АБ Группа: ,                      Cluster: 0.0_1.0_0.0_1.0</div>`)[0];
+                popup_47885b1be0009b5eab419f285c8aa24e.setContent(html_be9a84e7945d3653159a455c8a821836);
+            
+        
+
+        marker_af039a66d3de0838d8070a6b63d1d75c.bindPopup(popup_47885b1be0009b5eab419f285c8aa24e)
+        ;
+
+        
+    
+    
+            var marker_f67363cbbbe826f5e4a3909b0370899e = L.marker(
+                [56.0758541, 37.0542886],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_d12beaaa7089803e061fa93253af169e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_f67363cbbbe826f5e4a3909b0370899e.setIcon(icon_d12beaaa7089803e061fa93253af169e);
+        
+    
+        var popup_9080ab9f4e017b39a4b78d8ae4c6f976 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ec69286e13814b5c7164820e0f116b8 = $(`<div id="html_8ec69286e13814b5c7164820e0f116b8" style="width: 100.0%; height: 100.0%;">Ресторан: 74021514, Помещение: 3, Ценовая группа: 0, TRX: 4741,                      TRX std: 22.135349586096478, Конверсия: 0.7127887613247028, АБ Группа: ,                      Cluster: 0.0_1.0_0.0_1.0</div>`)[0];
+                popup_9080ab9f4e017b39a4b78d8ae4c6f976.setContent(html_8ec69286e13814b5c7164820e0f116b8);
+            
+        
+
+        marker_f67363cbbbe826f5e4a3909b0370899e.bindPopup(popup_9080ab9f4e017b39a4b78d8ae4c6f976)
+        ;
+
+        
+    
+    
+            var marker_3802a54fa595651bd1071c80ea27361b = L.marker(
+                [55.5691727, 38.116801910954834],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_9c6f4c011583a2b434e5a6058cd40476 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3802a54fa595651bd1071c80ea27361b.setIcon(icon_9c6f4c011583a2b434e5a6058cd40476);
+        
+    
+        var popup_4d641b3f1c72be7b8b971af4945cbf59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f825ef4b795091b812318eece533e7c3 = $(`<div id="html_f825ef4b795091b812318eece533e7c3" style="width: 100.0%; height: 100.0%;">Ресторан: 74321795, Помещение: 0, Ценовая группа: 4, TRX: 13979,                      TRX std: 94.93649770499871, Конверсия: 0.8143955897490089, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_3.0</div>`)[0];
+                popup_4d641b3f1c72be7b8b971af4945cbf59.setContent(html_f825ef4b795091b812318eece533e7c3);
+            
+        
+
+        marker_3802a54fa595651bd1071c80ea27361b.bindPopup(popup_4d641b3f1c72be7b8b971af4945cbf59)
+        ;
+
+        
+    
+    
+            var marker_336eef8e35b720835718708f0aa3199a = L.marker(
+                [55.5691727, 38.116801910954834],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_1b5dd3e8f816e2a258d0194abf672b92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_336eef8e35b720835718708f0aa3199a.setIcon(icon_1b5dd3e8f816e2a258d0194abf672b92);
+        
+    
+        var popup_3e24887909f21450c3bf5ca6b80825e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f69eeec6381db7007aa99649b931a80 = $(`<div id="html_2f69eeec6381db7007aa99649b931a80" style="width: 100.0%; height: 100.0%;">Ресторан: 74321853, Помещение: 3, Ценовая группа: 4, TRX: 14165,                      TRX std: 79.57703428731756, Конверсия: 0.8172346225259433, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_5.0</div>`)[0];
+                popup_3e24887909f21450c3bf5ca6b80825e6.setContent(html_2f69eeec6381db7007aa99649b931a80);
+            
+        
+
+        marker_336eef8e35b720835718708f0aa3199a.bindPopup(popup_3e24887909f21450c3bf5ca6b80825e6)
+        ;
+
+        
+    
+    
+            var marker_0e909baea7e5508e75fe598ff69420b9 = L.marker(
+                [55.578403, 39.5437584],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_0ef5dd183fc6147883799a6a80fce798 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_0e909baea7e5508e75fe598ff69420b9.setIcon(icon_0ef5dd183fc6147883799a6a80fce798);
+        
+    
+        var popup_084fc2d0b311253d45444ff097325803 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_234b4e7520bfbdafe3eba77441930842 = $(`<div id="html_234b4e7520bfbdafe3eba77441930842" style="width: 100.0%; height: 100.0%;">Ресторан: 74321812, Помещение: 3, Ценовая группа: 4, TRX: 9546,                      TRX std: 59.95060623521604, Конверсия: 0.7421546223949949, АБ Группа: ,                      Cluster: 0.0_0.0_0.0_4.0</div>`)[0];
+                popup_084fc2d0b311253d45444ff097325803.setContent(html_234b4e7520bfbdafe3eba77441930842);
+            
+        
+
+        marker_0e909baea7e5508e75fe598ff69420b9.bindPopup(popup_084fc2d0b311253d45444ff097325803)
+        ;
+
+        
+    
+    
+            var marker_05f0e8dfc962a2fd0b5fc3cbb41ff5e2 = L.marker(
+                [55.09992175, 36.60927334723832],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_84b1fda4f429464b15f3103ccf464427 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_05f0e8dfc962a2fd0b5fc3cbb41ff5e2.setIcon(icon_84b1fda4f429464b15f3103ccf464427);
+        
+    
+        var popup_efca39ac473a44f5b80e6c9edc4dfbd7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5479be6ca500bb30c900ff16a669c75d = $(`<div id="html_5479be6ca500bb30c900ff16a669c75d" style="width: 100.0%; height: 100.0%;">Ресторан: 74021958, Помещение: 3, Ценовая группа: 0, TRX: 13620,                      TRX std: 88.96195435863734, Конверсия: 0.6050898512514447, АБ Группа: ,                      Cluster: 0.0_1.0_0.0_0.0</div>`)[0];
+                popup_efca39ac473a44f5b80e6c9edc4dfbd7.setContent(html_5479be6ca500bb30c900ff16a669c75d);
+            
+        
+
+        marker_05f0e8dfc962a2fd0b5fc3cbb41ff5e2.bindPopup(popup_efca39ac473a44f5b80e6c9edc4dfbd7)
+        ;
+
+        
+    
+    
+            var marker_05ebd29132c37cd0d2ddd6815d8b20b2 = L.marker(
+                [55.5822477, 37.9080217],
+                {}
+            ).addTo(map_9e169dd8d621f94cb3484f9296d62b83);
+        
+    
+            var icon_a1aac23500f19e0b03b2958267d053e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_05ebd29132c37cd0d2ddd6815d8b20b2.setIcon(icon_a1aac23500f19e0b03b2958267d053e0);
+        
+    
+        var popup_c6f7a258168a96e7c5f0f805a135579b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8660ea66fd54412f66762dd558c5609f = $(`<div id="html_8660ea66fd54412f66762dd558c5609f" style="width: 100.0%; height: 100.0%;">Ресторан: 74321855, Помещение: 0, Ценовая группа: 4, TRX: 11651,                      TRX std: 89.58911358632228, Конверсия: 0.7414956009901105, АБ Группа: ,                      Cluster: 1.0_0.0_0.0_11.0</div>`)[0];
+                popup_c6f7a258168a96e7c5f0f805a135579b.setContent(html_8660ea66fd54412f66762dd558c5609f);
+            
+        
+
+        marker_05ebd29132c37cd0d2ddd6815d8b20b2.bindPopup(popup_c6f7a258168a96e7c5f0f805a135579b)
+        ;
+
+        
+    
+</script>
+</html>

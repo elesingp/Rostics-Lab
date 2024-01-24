@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results Map</title>
+    <style>
+        /* Сброс стилей */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Стилизация основного содержимого */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Контейнер для содержимого */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Стилизация заголовков */
+        h1 {
+            color: #D32F2F;
+            margin-bottom: 1rem;
+        }
+
+        /* Стилизация кнопок и ссылок */
+        button, a {
+            display: inline-block;
+            background-color: #D32F2F;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-right: 10px; /* Добавление небольшого отступа между кнопками/ссылками */
+            transition: background-color 0.3s;
+        }
+
+        button:hover, a:hover {
+            background-color: #B71C1C;
+        }
+
+        .button-map {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 20px; /* Расстояние слева от предыдущего элемента */
+        }
+
+
+        /* Таблица */
+        .table-container {
+            overflow-x: auto; /* Добавляет прокрутку к таблице на маленьких экранах */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #D32F2F;
+            color: white;
+        }
+
+        /* Адаптивность для мобильных устройств */
+        @media only screen and (max-width: 768px) {
+            button, a {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Results Map</h1>
+    <!-- Предполагается, что карта результатов сохраняется в 'static/map_result.html' -->
+    <iframe src="{{ url_for('static', filename='map_result.html') }}" width="1200" height="500"></iframe>
+    <div class="container">
+        <h1>Clustering Results</h1>
+        <div class="table-container">
+            {{ result_html|safe }}
+        </div>
+        <a href="{{ url_for('static', filename='clustered_results.csv') }}">Download Clustered Restraunts CSV</a>
+    </div>
+
+</body>
+</html>

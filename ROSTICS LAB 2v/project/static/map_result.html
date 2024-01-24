@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f81f69d1bc92f193712417e8fb3f06b2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f81f69d1bc92f193712417e8fb3f06b2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f81f69d1bc92f193712417e8fb3f06b2 = L.map(
+                "map_f81f69d1bc92f193712417e8fb3f06b2",
+                {
+                    center: [55.12019055, 36.82885434907944],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6e4515233665dc4846814d31a130273c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6e4515233665dc4846814d31a130273c.addTo(map_f81f69d1bc92f193712417e8fb3f06b2);
+        
+    
+            var marker_99bbe19f071c509059d3b537982f248f = L.marker(
+                [55.7505412, 37.6174782],
+                {}
+            ).addTo(map_f81f69d1bc92f193712417e8fb3f06b2);
+        
+    
+            var icon_0cdfab02e65e99d7d0f93f5a650d28fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_99bbe19f071c509059d3b537982f248f.setIcon(icon_0cdfab02e65e99d7d0f93f5a650d28fd);
+        
+    
+        var popup_2e7088a89938cf527a27159ef55c4d3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fb4b0acd5fbf03cfbadfaa99e3c0593 = $(`<div id="html_0fb4b0acd5fbf03cfbadfaa99e3c0593" style="width: 100.0%; height: 100.0%;">Ресторан: 74020678, Помещение: 3, Ценовая группа: 0, TRX: 13618,                      TRX std: 76.52083766198086, Конверсия: 0.8140668753736869, АБ Группа: Control,                      Cluster: 1.0_3.0_0.0_0.0</div>`)[0];
+                popup_2e7088a89938cf527a27159ef55c4d3e.setContent(html_0fb4b0acd5fbf03cfbadfaa99e3c0593);
+            
+        
+
+        marker_99bbe19f071c509059d3b537982f248f.bindPopup(popup_2e7088a89938cf527a27159ef55c4d3e)
+        ;
+
+        
+    
+    
+            var marker_b443842d6cb4a6e762786d294743e25d = L.marker(
+                [54.5101087, 36.2598115],
+                {}
+            ).addTo(map_f81f69d1bc92f193712417e8fb3f06b2);
+        
+    
+            var icon_f4248a6669497168be058ff73f323054 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_b443842d6cb4a6e762786d294743e25d.setIcon(icon_f4248a6669497168be058ff73f323054);
+        
+    
+        var popup_d8e708aa1485b1cfc04c86923a47f6ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff34c58870b7df3a1beeeba9b539d5d5 = $(`<div id="html_ff34c58870b7df3a1beeeba9b539d5d5" style="width: 100.0%; height: 100.0%;">Ресторан: 74020558, Помещение: 3, Ценовая группа: 0, TRX: 13532,                      TRX std: 68.09758220197239, Конверсия: 0.5360450455890137, АБ Группа: Test,                      Cluster: 1.0_3.0_0.0_0.0</div>`)[0];
+                popup_d8e708aa1485b1cfc04c86923a47f6ab.setContent(html_ff34c58870b7df3a1beeeba9b539d5d5);
+            
+        
+
+        marker_b443842d6cb4a6e762786d294743e25d.bindPopup(popup_d8e708aa1485b1cfc04c86923a47f6ab)
+        ;
+
+        
+    
+    
+            var marker_4bfe7046c9193f99a923f5e8484b20a8 = L.marker(
+                [55.09992175, 36.60927334723832],
+                {}
+            ).addTo(map_f81f69d1bc92f193712417e8fb3f06b2);
+        
+    
+            var icon_51630e9f4bce0ea75d684185b959e572 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_4bfe7046c9193f99a923f5e8484b20a8.setIcon(icon_51630e9f4bce0ea75d684185b959e572);
+        
+    
+        var popup_cd542df9da67d39814f1adc230073fc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd2c89a7210902e6d47951af06a19dac = $(`<div id="html_dd2c89a7210902e6d47951af06a19dac" style="width: 100.0%; height: 100.0%;">Ресторан: 74021958, Помещение: 3, Ценовая группа: 0, TRX: 13620,                      TRX std: 88.96195435863734, Конверсия: 0.6050898512514447, АБ Группа: Control,                      Cluster: 1.0_3.0_0.0_0.0</div>`)[0];
+                popup_cd542df9da67d39814f1adc230073fc7.setContent(html_dd2c89a7210902e6d47951af06a19dac);
+            
+        
+
+        marker_4bfe7046c9193f99a923f5e8484b20a8.bindPopup(popup_cd542df9da67d39814f1adc230073fc7)
+        ;
+
+        
+    
+</script>
+</html>

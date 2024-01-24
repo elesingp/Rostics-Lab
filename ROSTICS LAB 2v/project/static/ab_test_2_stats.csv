@@ -1,0 +1,2 @@
+Метрика,Тест,AB p_value,AB p_value std,AA p_value,bp_count,unique_ids
+revenue,ttest_2sample,0.07317115987954369,0.09102626629404074,0.16596511362547633,10,0.94

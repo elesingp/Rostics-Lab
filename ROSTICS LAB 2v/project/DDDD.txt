@@ -1,0 +1,101 @@
+configurations = [
+     {
+        'slice_type': 'event_date, restraunt_id',
+        'aggregator': 'action_auth_order_success',
+        'aggregation_type': 'sum',
+        'parameter': 'restraunt_id not in [74020587, 74013270, 74020449, 74021788, 74020871, 74020660, 74021978, 74020896, 74012184, 74020851, 74020828, 74021003, 74021914, 74021880, 74021975, 74321670, 74321666, 74215106, 74021329, 74021678, 74021302, 74021639]',
+        'test': 'ttest_2sample', #  74021433
+        'AA_alpha': 0.8,
+        'bootstrap_cycles': 1000,
+        'distribution': 'none' 
+    },
+    {
+        'slice_type': 'event_date, restraunt_id',
+        'aggregator': 'revenue',
+        'aggregation_type': 'sum',
+        'parameter': 'restraunt_id not in [74020587, 74013270, 74020449, 74021788, 74020871, 74020660, 74021978, 74020896, 74012184, 74020851, 74020828, 74021003, 74021914, 74021880, 74021975, 74321670, 74321666, 74215106, 74021329, 74021678, 74021302, 74021639]',
+        'test': 'ttest_2sample', #  74021433
+        'AA_alpha': 0.8,
+        'bootstrap_cycles': 1000,
+        'distribution': 'none' 
+    },
+    ##############################################
+    {
+        'slice_type': 'event_date, restraunt_id',
+        'aggregator': 'avg_product_count',
+        'aggregation_type': 'sum',
+        'parameter': 'restraunt_id not in [74020587, 74013270, 74020449, 74021788, 74020871, 74020660, 74021978, 74020896, 74012184, 74020851, 74020828, 74021003, 74021914, 74021880, 74021975, 74321670, 74321666, 74215106, 74021329, 74021678, 74021302, 74021639]',
+        'test': 'ttest_2sample', #  74021433
+        'AA_alpha': 0.2,
+        'bootstrap_cycles': 1000,
+        'distribution': 'none' 
+    },
+     {
+        'slice_type': 'event_date, restraunt_id',
+        'aggregator': 'conversion_rate_total',
+        'aggregation_type': 'sum',
+        'parameter': 'restraunt_id not in [74020587, 74013270, 74020449, 74021788, 74020871, 74020660, 74021978, 74020896, 74012184, 74020851, 74020828, 74021003, 74021914, 74021880, 74021975, 74321670, 74321666, 74215106, 74021329, 74021678, 74021302, 74021639]',
+        'test': 'ttest_2sample', #  74021433
+        'AA_alpha': 0.8,
+        'bootstrap_cycles': 1000,
+        'distribution': 'none' 
+    },
+     {
+        'slice_type': 'event_date, restraunt_id',
+        'aggregator': 'conversion_rate_auth',
+        'aggregation_type': 'sum',
+        'parameter': 'restraunt_id not in [74020587, 74013270, 74020449, 74021788, 74020871, 74020660, 74021978, 74020896, 74012184, 74020851, 74020828, 74021003, 74021914, 74021880, 74021975, 74321670, 74321666, 74215106, 74021329, 74021678, 74021302, 74021639]',
+        'test': 'ttest_2sample', #  74021433
+        'AA_alpha': 0.2,
+        'bootstrap_cycles': 500,
+        'distribution': 'none' 
+    },
+]
+
+    <div class="container">
+        <h1>Гистограмма</h1>
+        <div class="histogram-wrapper">
+            <div class="histogram-item" style="width: 550px; height: 400px;">
+                <img src="{{ control_histogram_url }}" alt="Гистограмма результатов контрольной группы" style="width: 100%; height: 100%;" />
+            </div>
+            <div class="histogram-item" style="width: 550px; height: 400px;">
+                <img src="{{ test_histogram_url }}" alt="Гистограмма результатов тестовой группы" style="width: 100%; height: 100%;" />
+            </div>
+        </div>
+        <div class="histogram-wrapper">
+            <div class="histogram-item" style="width: 600px; height: 400px;">
+                <img src="{{ histogram_url }}" alt="Генеральная совокупность" style="width: 100%; height: 100%;" />
+            </div>
+        </div>
+    </div>
+
+    {
+        'slice_type': 'event_date, restraunt_id',
+        'aggregator': 'action_order_success',
+        'aggregation_type': 'sum',
+        'parameter': 'none',
+        'test': 'ttest_2sample', #  NaN
+        'AA_alpha': 0.9,
+        'bootstrap_cycles': 1500,
+        'distribution': 'none' # когда будет ML нужно будет делать как в naive baiers week 01
+    },
+    {
+        'slice_type': 'event_date, restraunt_id',
+        'aggregator': 'revenue',
+        'aggregation_type': 'sum',
+        'parameter': 'none',
+        'test': 'ttest_2sample', #  NaN
+        'AA_alpha': 0.9,
+        'bootstrap_cycles': 1000,
+        'distribution': 'none' # когда будет ML нужно будет делать как в naive baiers week 01
+    },
+    {
+        'slice_type': 'event_date, restraunt_id',
+        'aggregator': 'conversion_rate_total',
+        'aggregation_type': 'sum',
+        'parameter': 'none',
+        'test': 'ttest_2sample', #  NaN
+        'AA_alpha': 0.8,
+        'bootstrap_cycles': 1000,
+        'distribution': 'none' # когда будет ML нужно будет делать как в naive baiers week 01
+    },
