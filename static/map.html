@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_17f869b57160bbdabb6fdc8971acc015 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_17f869b57160bbdabb6fdc8971acc015" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_17f869b57160bbdabb6fdc8971acc015 = L.map(
+                "map_17f869b57160bbdabb6fdc8971acc015",
+                {
+                    center: [54.80115985630436, 49.57628240079403],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ae34fab3f89a7a55a8e785740668043f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ae34fab3f89a7a55a8e785740668043f.addTo(map_17f869b57160bbdabb6fdc8971acc015);
+        
+    
+            var marker_499b6d76cd2b8383827c5a475ab35511 = L.marker(
+                [53.27896405, 34.36589361201107],
+                {}
+            ).addTo(map_17f869b57160bbdabb6fdc8971acc015);
+        
+    
+            var icon_fbdb17537e1672e39f68dcd070ed632d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_499b6d76cd2b8383827c5a475ab35511.setIcon(icon_fbdb17537e1672e39f68dcd070ed632d);
+        
+    
+        var popup_6949bf90be1749f7f5d28d99861232bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45a0627cbb403e142351499528d85556 = $(`<div id="html_45a0627cbb403e142351499528d85556" style="width: 100.0%; height: 100.0%;">Ресторан: 74021462, Город: Bryansk, Помещение: 2, Ценовая группа: 0, TRX: 4863,                      TRX std: 28.65483664758296, Конверсия: 0.6936751960168275, АБ Группа: ,                      Cluster: 0.0_0.0</div>`)[0];
+                popup_6949bf90be1749f7f5d28d99861232bd.setContent(html_45a0627cbb403e142351499528d85556);
+            
+        
+
+        marker_499b6d76cd2b8383827c5a475ab35511.bindPopup(popup_6949bf90be1749f7f5d28d99861232bd)
+        ;
+
+        
+    
+    
+            var marker_cef5d52a73d2862ac2dfe3743af493b4 = L.marker(
+                [51.6312684, 136.121524],
+                {}
+            ).addTo(map_17f869b57160bbdabb6fdc8971acc015);
+        
+    
+            var icon_6fc80cb34d7f42e31648154b2010873b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_cef5d52a73d2862ac2dfe3743af493b4.setIcon(icon_6fc80cb34d7f42e31648154b2010873b);
+        
+    
+        var popup_6657dbfef11deba00fbc14e05a321884 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19703ee87bcdb5d2c1b4d59b1e0ac68a = $(`<div id="html_19703ee87bcdb5d2c1b4d59b1e0ac68a" style="width: 100.0%; height: 100.0%;">Ресторан: 74021836, Город: Khabarovsk, Помещение: 3, Ценовая группа: 0, TRX: 13018,                      TRX std: 75.13149291788481, Конверсия: 0.6646464145897196, АБ Группа: ,                      Cluster: 0.0_1.0</div>`)[0];
+                popup_6657dbfef11deba00fbc14e05a321884.setContent(html_19703ee87bcdb5d2c1b4d59b1e0ac68a);
+            
+        
+
+        marker_cef5d52a73d2862ac2dfe3743af493b4.bindPopup(popup_6657dbfef11deba00fbc14e05a321884)
+        ;
+
+        
+    
+    
+            var marker_5aec486d80a13d220f629beda73197f5 = L.marker(
+                [55.8917293, 37.4396994],
+                {}
+            ).addTo(map_17f869b57160bbdabb6fdc8971acc015);
+        
+    
+            var icon_40150adfde456ae4ecdb5d3063e13726 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_5aec486d80a13d220f629beda73197f5.setIcon(icon_40150adfde456ae4ecdb5d3063e13726);
+        
+    
+        var popup_aa78a29b69dbadb9f15add4083443d37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33d01b4c67bdfdb6c75bb3fb6b25c59b = $(`<div id="html_33d01b4c67bdfdb6c75bb3fb6b25c59b" style="width: 100.0%; height: 100.0%;">Ресторан: 74021157, Город: Khimki, Помещение: 2, Ценовая группа: 0, TRX: 4737,                      TRX std: 30.542686798616824, Конверсия: 0.7694867397748889, АБ Группа: ,                      Cluster: 0.0_0.0</div>`)[0];
+                popup_aa78a29b69dbadb9f15add4083443d37.setContent(html_33d01b4c67bdfdb6c75bb3fb6b25c59b);
+            
+        
+
+        marker_5aec486d80a13d220f629beda73197f5.bindPopup(popup_aa78a29b69dbadb9f15add4083443d37)
+        ;
+
+        
+    
+    
+            var marker_99cd2a1755db2b8435f807211c0c6e97 = L.marker(
+                [56.0090968, 92.8725147],
+                {}
+            ).addTo(map_17f869b57160bbdabb6fdc8971acc015);
+        
+    
+            var icon_d7261e3203eec733a24ee302948a7883 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_99cd2a1755db2b8435f807211c0c6e97.setIcon(icon_d7261e3203eec733a24ee302948a7883);
+        
+    
+        var popup_2dd2f0ced290538f0f630abf72308675 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5b65f6422a5dbbc3311e4dbeecf91e0 = $(`<div id="html_f5b65f6422a5dbbc3311e4dbeecf91e0" style="width: 100.0%; height: 100.0%;">Ресторан: 74221447, Город: Krasnoyarsk, Помещение: 2, Ценовая группа: 0, TRX: 13387,                      TRX std: 75.02795636020598, Конверсия: 0.7963450135096627, АБ Группа: ,                      Cluster: 0.0_1.0</div>`)[0];
+                popup_2dd2f0ced290538f0f630abf72308675.setContent(html_f5b65f6422a5dbbc3311e4dbeecf91e0);
+            
+        
+
+        marker_99cd2a1755db2b8435f807211c0c6e97.bindPopup(popup_2dd2f0ced290538f0f630abf72308675)
+        ;
+
+        
+    
+    
+            var marker_416c1bb214b29c0f8b8d3401d4532820 = L.marker(
+                [55.625578, 37.6063916],
+                {}
+            ).addTo(map_17f869b57160bbdabb6fdc8971acc015);
+        
+    
+            var icon_6655b3743ddde49300cd07a5812ff9ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_416c1bb214b29c0f8b8d3401d4532820.setIcon(icon_6655b3743ddde49300cd07a5812ff9ea);
+        
+    
+        var popup_dfa5dea9bc4e7ac81271e69c7e5d9097 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb6850d1e145687701306fe3c7b1dd65 = $(`<div id="html_bb6850d1e145687701306fe3c7b1dd65" style="width: 100.0%; height: 100.0%;">Ресторан: 74020799, Город: Moscow, Помещение: 4, Ценовая группа: 4, TRX: 4930,                      TRX std: 28.86243406663109, Конверсия: 0.7347485765458494, АБ Группа: ,                      Cluster: 0.0_0.0</div>`)[0];
+                popup_dfa5dea9bc4e7ac81271e69c7e5d9097.setContent(html_bb6850d1e145687701306fe3c7b1dd65);
+            
+        
+
+        marker_416c1bb214b29c0f8b8d3401d4532820.bindPopup(popup_dfa5dea9bc4e7ac81271e69c7e5d9097)
+        ;
+
+        
+    
+    
+            var marker_6b4a082d2fdb0d295abe455d284ebb9b = L.marker(
+                [55.625578, 37.6063916],
+                {}
+            ).addTo(map_17f869b57160bbdabb6fdc8971acc015);
+        
+    
+            var icon_0922e668c41e4db29ea788833048c911 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_6b4a082d2fdb0d295abe455d284ebb9b.setIcon(icon_0922e668c41e4db29ea788833048c911);
+        
+    
+        var popup_483f503d90a0787c1a2f612ac21e9e59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e16310ad595e9a747676d0ef6510ac35 = $(`<div id="html_e16310ad595e9a747676d0ef6510ac35" style="width: 100.0%; height: 100.0%;">Ресторан: 74021762, Город: Moscow, Помещение: 3, Ценовая группа: 4, TRX: 13124,                      TRX std: 74.8985696749168, Конверсия: 0.7334974512266189, АБ Группа: ,                      Cluster: 0.0_1.0</div>`)[0];
+                popup_483f503d90a0787c1a2f612ac21e9e59.setContent(html_e16310ad595e9a747676d0ef6510ac35);
+            
+        
+
+        marker_6b4a082d2fdb0d295abe455d284ebb9b.bindPopup(popup_483f503d90a0787c1a2f612ac21e9e59)
+        ;
+
+        
+    
+    
+            var marker_442aa52049ee50fe841e6467813a97dd = L.marker(
+                [65.532, 72.52],
+                {}
+            ).addTo(map_17f869b57160bbdabb6fdc8971acc015);
+        
+    
+            var icon_1b6feaeeb8c88ce259bb232473b480a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_442aa52049ee50fe841e6467813a97dd.setIcon(icon_1b6feaeeb8c88ce259bb232473b480a6);
+        
+    
+        var popup_a2e3cfcd6fc8692884781bae9c7e6f73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff95f6d630010f1f59a52804bbc43b6f = $(`<div id="html_ff95f6d630010f1f59a52804bbc43b6f" style="width: 100.0%; height: 100.0%;">Ресторан: 74021880, Город: Nadym, Помещение: 3, Ценовая группа: 0, TRX: 4904,                      TRX std: 29.673800921905546, Конверсия: 0.6190586184541123, АБ Группа: ,                      Cluster: 0.0_0.0</div>`)[0];
+                popup_a2e3cfcd6fc8692884781bae9c7e6f73.setContent(html_ff95f6d630010f1f59a52804bbc43b6f);
+            
+        
+
+        marker_442aa52049ee50fe841e6467813a97dd.bindPopup(popup_a2e3cfcd6fc8692884781bae9c7e6f73)
+        ;
+
+        
+    
+    
+            var marker_6ab2976915a313e7579cb2a09b2f18fa = L.marker(
+                [55.0288307, 82.9226887],
+                {}
+            ).addTo(map_17f869b57160bbdabb6fdc8971acc015);
+        
+    
+            var icon_1f00680f4b69840a113a0a5a27aabeee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_6ab2976915a313e7579cb2a09b2f18fa.setIcon(icon_1f00680f4b69840a113a0a5a27aabeee);
+        
+    
+        var popup_bdf181d09d6d7c67bc40b47029e97127 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c951c11474c6534a7665910a21c0542 = $(`<div id="html_2c951c11474c6534a7665910a21c0542" style="width: 100.0%; height: 100.0%;">Ресторан: 74221444, Город: Novosibirsk, Помещение: 4, Ценовая группа: 1, TRX: 4794,                      TRX std: 29.95811612575983, Конверсия: 0.7000242239161685, АБ Группа: ,                      Cluster: 0.0_0.0</div>`)[0];
+                popup_bdf181d09d6d7c67bc40b47029e97127.setContent(html_2c951c11474c6534a7665910a21c0542);
+            
+        
+
+        marker_6ab2976915a313e7579cb2a09b2f18fa.bindPopup(popup_bdf181d09d6d7c67bc40b47029e97127)
+        ;
+
+        
+    
+    
+            var marker_f017a0d72ead9f17d86733abf947e386 = L.marker(
+                [54.9830067, 73.37452243916528],
+                {}
+            ).addTo(map_17f869b57160bbdabb6fdc8971acc015);
+        
+    
+            var icon_70099ba114f84f077aa183ec1eae292c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_f017a0d72ead9f17d86733abf947e386.setIcon(icon_70099ba114f84f077aa183ec1eae292c);
+        
+    
+        var popup_ddc3e696c19739e1277ffbcb77dd3a3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ddf6633a8da98cc8f68d03d282cded5 = $(`<div id="html_2ddf6633a8da98cc8f68d03d282cded5" style="width: 100.0%; height: 100.0%;">Ресторан: 74220484, Город: Omsk, Помещение: 4, Ценовая группа: 9, TRX: 13484,                      TRX std: 75.00690862082058, Конверсия: 0.7158820668012817, АБ Группа: ,                      Cluster: 0.0_1.0</div>`)[0];
+                popup_ddc3e696c19739e1277ffbcb77dd3a3c.setContent(html_2ddf6633a8da98cc8f68d03d282cded5);
+            
+        
+
+        marker_f017a0d72ead9f17d86733abf947e386.bindPopup(popup_ddc3e696c19739e1277ffbcb77dd3a3c)
+        ;
+
+        
+    
+    
+            var marker_ee0f7181645bea2aae003b4e171c588b = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_17f869b57160bbdabb6fdc8971acc015);
+        
+    
+            var icon_aa6d3aef24faa078b8b3391ee78df6a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_ee0f7181645bea2aae003b4e171c588b.setIcon(icon_aa6d3aef24faa078b8b3391ee78df6a5);
+        
+    
+        var popup_bc388b99a3e3b1fa3aade0995d8f3235 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9e2bba4b8f3c23c28346b231cca479e = $(`<div id="html_f9e2bba4b8f3c23c28346b231cca479e" style="width: 100.0%; height: 100.0%;">Ресторан: 74021029, Город: Saint Petersburg, Помещение: 4, Ценовая группа: 4, TRX: 13138,                      TRX std: 75.40181004056524, Конверсия: 0.7966417925202344, АБ Группа: ,                      Cluster: 0.0_1.0</div>`)[0];
+                popup_bc388b99a3e3b1fa3aade0995d8f3235.setContent(html_f9e2bba4b8f3c23c28346b231cca479e);
+            
+        
+
+        marker_ee0f7181645bea2aae003b4e171c588b.bindPopup(popup_bc388b99a3e3b1fa3aade0995d8f3235)
+        ;
+
+        
+    
+    
+            var marker_4d7142ce388cce1dd2df820b4943a1fa = L.marker(
+                [51.530018, 46.034683],
+                {}
+            ).addTo(map_17f869b57160bbdabb6fdc8971acc015);
+        
+    
+            var icon_038d00c821caa646157240d5ea5447f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_4d7142ce388cce1dd2df820b4943a1fa.setIcon(icon_038d00c821caa646157240d5ea5447f3);
+        
+    
+        var popup_bb90bd22d06a45adf937eda5ba4d9ddc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcdd7429c9819e1cfa568611243e4785 = $(`<div id="html_dcdd7429c9819e1cfa568611243e4785" style="width: 100.0%; height: 100.0%;">Ресторан: 74021483, Город: Saratov, Помещение: 3, Ценовая группа: 0, TRX: 13088,                      TRX std: 74.87960679507111, Конверсия: 0.6193481014977196, АБ Группа: ,                      Cluster: 0.0_1.0</div>`)[0];
+                popup_bb90bd22d06a45adf937eda5ba4d9ddc.setContent(html_dcdd7429c9819e1cfa568611243e4785);
+            
+        
+
+        marker_4d7142ce388cce1dd2df820b4943a1fa.bindPopup(popup_bb90bd22d06a45adf937eda5ba4d9ddc)
+        ;
+
+        
+    
+    
+            var marker_b2c894421d342debf362fee78be1705b = L.marker(
+                [56.730941, 37.528016],
+                {}
+            ).addTo(map_17f869b57160bbdabb6fdc8971acc015);
+        
+    
+            var icon_1b66c41fa60a59612c6163f84e76bdd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_b2c894421d342debf362fee78be1705b.setIcon(icon_1b66c41fa60a59612c6163f84e76bdd5);
+        
+    
+        var popup_9a9e9e194fc9132e12e6803048c28a67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e097c5b78963165a89ba290f4454969f = $(`<div id="html_e097c5b78963165a89ba290f4454969f" style="width: 100.0%; height: 100.0%;">Ресторан: 74021513, Город: Taldom, Помещение: 3, Ценовая группа: 0, TRX: 4713,                      TRX std: 30.145572137223063, Конверсия: 0.7693043285286117, АБ Группа: ,                      Cluster: 0.0_0.0</div>`)[0];
+                popup_9a9e9e194fc9132e12e6803048c28a67.setContent(html_e097c5b78963165a89ba290f4454969f);
+            
+        
+
+        marker_b2c894421d342debf362fee78be1705b.bindPopup(popup_9a9e9e194fc9132e12e6803048c28a67)
+        ;
+
+        
+    
+    
+            var marker_06a9fd98946a55ba28b683b36045e646 = L.marker(
+                [54.3150278, 48.403373],
+                {}
+            ).addTo(map_17f869b57160bbdabb6fdc8971acc015);
+        
+    
+            var icon_483a944cb11e92ced6ab1b754d35aaca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_06a9fd98946a55ba28b683b36045e646.setIcon(icon_483a944cb11e92ced6ab1b754d35aaca);
+        
+    
+        var popup_dc4867cb00df3cde90f44a1b321d45dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f5c1976763ee06b144d66a59a88fbf8 = $(`<div id="html_5f5c1976763ee06b144d66a59a88fbf8" style="width: 100.0%; height: 100.0%;">Ресторан: 74021620, Город: Ulyanovsk, Помещение: 3, Ценовая группа: 0, TRX: 4719,                      TRX std: 31.274412686553987, Конверсия: 0.6904673469296818, АБ Группа: ,                      Cluster: 0.0_0.0</div>`)[0];
+                popup_dc4867cb00df3cde90f44a1b321d45dc.setContent(html_5f5c1976763ee06b144d66a59a88fbf8);
+            
+        
+
+        marker_06a9fd98946a55ba28b683b36045e646.bindPopup(popup_dc4867cb00df3cde90f44a1b321d45dc)
+        ;
+
+        
+    
+    
+            var marker_37ad9c10da55ad89158faecfc96babd5 = L.marker(
+                [48.6484138, 44.38497559012991],
+                {}
+            ).addTo(map_17f869b57160bbdabb6fdc8971acc015);
+        
+    
+            var icon_cd142ee00f58f142df178120213cb659 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_37ad9c10da55ad89158faecfc96babd5.setIcon(icon_cd142ee00f58f142df178120213cb659);
+        
+    
+        var popup_21b5f55917033729e62a498ef7cd19d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1037e83461c8d733bc2669fba700bfad = $(`<div id="html_1037e83461c8d733bc2669fba700bfad" style="width: 100.0%; height: 100.0%;">Ресторан: 74321843, Город: Volgograd, Помещение: 3, Ценовая группа: 4, TRX: 4725,                      TRX std: 30.884973351896686, Конверсия: 0.5804336155204207, АБ Группа: ,                      Cluster: 0.0_0.0</div>`)[0];
+                popup_21b5f55917033729e62a498ef7cd19d8.setContent(html_1037e83461c8d733bc2669fba700bfad);
+            
+        
+
+        marker_37ad9c10da55ad89158faecfc96babd5.bindPopup(popup_21b5f55917033729e62a498ef7cd19d8)
+        ;
+
+        
+    
+    
+            var marker_5ac5fd4133a5ef57742153db358c268e = L.marker(
+                [55.322518, 38.6816824],
+                {}
+            ).addTo(map_17f869b57160bbdabb6fdc8971acc015);
+        
+    
+            var icon_a3b6ca39573a68f02a6880b48efffa7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_5ac5fd4133a5ef57742153db358c268e.setIcon(icon_a3b6ca39573a68f02a6880b48efffa7d);
+        
+    
+        var popup_259da5d1cef3050e922ca2967d305bdc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c0d2467b61908c8e2980ecd32ef0e54 = $(`<div id="html_5c0d2467b61908c8e2980ecd32ef0e54" style="width: 100.0%; height: 100.0%;">Ресторан: 74321793, Город: Voskresensk, Помещение: 3, Ценовая группа: 4, TRX: 13249,                      TRX std: 75.49669281873487, Конверсия: 0.7969131292893763, АБ Группа: ,                      Cluster: 0.0_1.0</div>`)[0];
+                popup_259da5d1cef3050e922ca2967d305bdc.setContent(html_5c0d2467b61908c8e2980ecd32ef0e54);
+            
+        
+
+        marker_5ac5fd4133a5ef57742153db358c268e.bindPopup(popup_259da5d1cef3050e922ca2967d305bdc)
+        ;
+
+        
+    
+    
+            var marker_df9fec7322cef5a0cb7c954bda72678a = L.marker(
+                [55.8586627, 48.55746590061055],
+                {}
+            ).addTo(map_17f869b57160bbdabb6fdc8971acc015);
+        
+    
+            var icon_36b6718fd15d04bbfe8e6d606ada4ab5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_df9fec7322cef5a0cb7c954bda72678a.setIcon(icon_36b6718fd15d04bbfe8e6d606ada4ab5);
+        
+    
+        var popup_31a44434566e0d444a66d8ec0824750e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63396fb0b1e8cebc10a987951eee950a = $(`<div id="html_63396fb0b1e8cebc10a987951eee950a" style="width: 100.0%; height: 100.0%;">Ресторан: 74020661, Город: Zelenodolsk, Помещение: 3, Ценовая группа: 9, TRX: 13225,                      TRX std: 75.76714592092344, Конверсия: 0.7705210304607618, АБ Группа: ,                      Cluster: 0.0_1.0</div>`)[0];
+                popup_31a44434566e0d444a66d8ec0824750e.setContent(html_63396fb0b1e8cebc10a987951eee950a);
+            
+        
+
+        marker_df9fec7322cef5a0cb7c954bda72678a.bindPopup(popup_31a44434566e0d444a66d8ec0824750e)
+        ;
+
+        
+    
+</script>
+</html>

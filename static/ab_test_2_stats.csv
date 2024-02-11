@@ -1,0 +1,9 @@
+Метрика,Тест,AB p_value,AB p_value std,AA p_value,bp_count
+action_order_success,ttest_2sample,0.6891946128775568,0.0,0.5419489213889968,0
+action_order_success,ttest_2sample,0.5891829297968154,0.0,0.5419489213889968,0
+action_order_success,ttest_2sample,0.47724035968863276,0.0,0.5419489213889968,0
+action_order_success,ttest_2sample,0.32652147293691236,0.0,0.5419489213889968,0
+action_order_success,ttest_2sample,0.31623064114131694,0.0,0.5419489213889968,0
+action_order_success,ttest_2sample,0.31740100988275577,0.0,0.5419489213889968,0
+action_order_success,ttest_2sample,0.3888760921380645,0.0,0.5419489213889968,0
+action_order_success,ttest_2sample,0.7872815735226997,0.0,0.5419489213889968,0

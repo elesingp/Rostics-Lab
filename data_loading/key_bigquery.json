@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "kfc-kiosk-3",
+  "private_key_id": "57d0888cd7fd50f5f43a3577ffdba896d3345266",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCnYZi62cf+BK0d\nGUz8kgqzEAk5QXR6e/xnQmFzxX+ZxFzhPnZTWVUlp61102yT641BiWWulzi+I/yC\ndw9WbCnplnZ0sYpRv/KHOSSqziHVVrnCgN/XbNdp2cYKoh1+weaob/Q5ydYpqfeC\n0flaH+n9xYCfBtCR6yB7ipqLMh/ViATGMax6TjvdNOHnJ38mZKdrO/L3cdnhfOwM\nbznScpDwTJGR4M402BajajZ7K9ZVIYqSDYsytE3S3OqnHGo906aTGCicA5GEMDwD\nMEziE91b6UuiV9INcuNqgP4j05oTooqBSgRW1wXfYjGlx41nS20m3IlLAQntZNEn\n93Y0FZUJAgMBAAECggEACD9pjzYmrKr+Uhi/umetL0ry/ryYSLt4odNGNLYz+20O\n8T/ABOC6BAj8eySCjSdmO9HRY4ZVaB54gCqYZDcgOZUNxozuYT4xbTMGTi7/a8vC\nNjCzgaH+BgaSbk5etbLy8rR8NvzDGM/PP8Wo9nqWxR0eTA0XP0QewvepddfFHyMS\n77XRmiWaupSJLdvxrsw9p0ctjpz+6jFsw2pfw3ufIAekz6r/L1rylAj3zzrtiojj\nIVkGzng0MR+LIxVt7OWBRiOQ5UeecbmeS+KWfBXQbWPfHAU9+rFXg+4X5ZzwxUvo\n0vxlklUJfyjZt4E1am0V27bz5B8olyunM1h+U5FtIQKBgQDWGNQ0xd/bS8oTl8il\nT1fDwo2y7QmBFJDc48ySWzUdRYIA1AeWdquaJ0HXxEkIBIpNZLRp9dLP12j9ew6c\nP8svVsw5vKSKE31KthwN7GQH6IHNO4p3YcdPAR3xT6L+0MAfxDBVKi3BzEHSagk9\nRHbebN5ptXG6z1ZACrfs+sjtYwKBgQDIJBwK1r15tZ/HkSGVIWovRV1TPckmjXn9\nBI4bsRr/vox0QfxmfHjbsZIvjrcXconlDzY8wlmQsPT2egOT4rPXV9EwVo64e6/F\nGx6gusocpgKDRbDeYAtg1gW7kg/34vZv5lTUsTX2lSj4QW46Ev0feBQjx6FTsG3S\n8Aim64aFowKBgHEAk+jy1A/sddFXmNjgAwPZSW86O3z8/OUJ+2z4ZRV5HYAQaZza\nMALiW5dmC+IGe3UUBUG0NTvsh4bbD8Aaz8TBvHNxBSu307a+XhpfPgEKkJBhr9kJ\nK+igP0yh6vcx+WYK6DPbWmFizQ8hVpUW8OK/dbk3wrqGOxD8V03mpGzfAoGAUt6g\nvdwsmDib8AYn4Zf0X55ZBh6PK2dpG1rHfK/YfgxoG7s2xzjC0jS0UvzE0vCaKD4k\nNwRCEaczxtq+oH09+exisaEldz2/id2w0NyG01XptHEmyuz5yR7VQNU5x2oyoCK+\n/VJjBba9QA3XljRGmsEdlbMTGZPz5WN+MZ9UFAECgYBc5GvEt7UbfG5Rt3mhLPEb\nMCj34BAOqQCC4GtabF1texxPzKHYZOE5++dmkFWA+Z0ojElVS2vI3zq5hM7fYm4D\n6jsfmUyyiRS6MG99pqKvYSJC4wqN1n/n43w7siOAYv2VclVppGfokDlFOZR8x/XB\n91Fl7CKorsp5oQmjo0arPQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fo09s@kfc-kiosk-3.iam.gserviceaccount.com",
+  "client_id": "115904949093889228920",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fo09s%40kfc-kiosk-3.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
