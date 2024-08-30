@@ -17,3 +17,4 @@ psql -U codespace -d db
 
 # Создание таблиц
 \i /workspaces/codespaces-blank/project/database/test_config.sql
+\i C:\ROSTICS-LAB\project\database\test_config.sql

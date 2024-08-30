@@ -1,0 +1,16 @@
+cluster_config:
+  - cluster: ['order_value_mean']
+    model: 'kmean'
+    normalization: False
+    eps / n_clusters: 10
+    min_samples: 'none'
+  - cluster: ['latitude', 'longitude']
+    model: 'dbscan'
+    normalization: False
+    eps / n_clusters: 1
+    min_samples: 5
+
+common_config_clustering:
+  start_date: '2024-04-09'
+  data_collect_start_date: '2024-04-01'
+  data_collect_end_date: '2024-04-18'
