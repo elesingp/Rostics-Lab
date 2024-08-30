@@ -1,0 +1,83 @@
+configurations_aa:
+  - metric_id: 0
+    slice_type: date, restaurant_id
+    aggregator: clicks
+    stratification: True
+    test: ttest
+    parameter: none
+    aggregation_type: mean
+    split_method: random_from_csv
+    method: default
+    transform: default
+    bootstrap_method: normal
+    bootstrap_cycles: 100
+    lower_bound: 0
+    upper_bound: 1
+    iteration_cycles: 100
+    MDE: 6
+    MDE_start: 0
+    MDE_step: 1
+    MDE_finish: 2
+    alpha: 0.05
+    beta: 0.2
+  
+  - metric_id: 1
+    slice_type: date, restaurant_id
+    aggregator: views
+    stratification: True
+    test: ttest
+    parameter: none
+    aggregation_type: mean
+    split_method: random_from_csv
+    method: default
+    transform: default
+    bootstrap_method: normal
+    bootstrap_cycles: 100
+    lower_bound: 0
+    upper_bound: 1
+    iteration_cycles: 100
+    MDE: 6
+    MDE_start: 0
+    MDE_step: 1
+    MDE_finish: 2
+    alpha: 0.05
+    beta: 0.2
+
+  - metric_id: 2
+    slice_type: date, restaurant_id
+    aggregator: ctr
+    stratification: True
+    test: ttest
+    parameter: none
+    aggregation_type: mean
+    split_method: random_from_csv
+    method: default
+    transform: default
+    bootstrap_method: normal
+    bootstrap_cycles: 100
+    lower_bound: 0
+    upper_bound: 1
+    iteration_cycles: 100
+    MDE: 6
+    MDE_start: 0
+    MDE_step: 1
+    MDE_finish: 2
+    alpha: 0.05
+    beta: 0.2
+
+common_config_aa:
+  exp_id: 0
+  dbname: "db"
+  user: "codespace"
+  host: "localhost"
+  project: "kfc-kiosk-3"
+  location: "US"
+  query_id: "bquxjob_159f1b6a_18cedf71333"
+  kiosk_path: C:\ROSTICS-LAB\project\static\test_data\data_1.csv
+  format: csv
+  groups_path: C:\ROSTICS-LAB\project\static\active_data\stratification_groups.csv
+  name: "ab_test_3"
+  start_date: "2023-12-15"
+  data_collect_start_date: "2022-04-01"
+  data_collect_end_date: "2025-04-18"
+  group_size: 36

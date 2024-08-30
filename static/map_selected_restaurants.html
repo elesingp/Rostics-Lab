@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_142400035ca373bae8decc7b8c3c52fd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_142400035ca373bae8decc7b8c3c52fd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_142400035ca373bae8decc7b8c3c52fd = L.map(
+                "map_142400035ca373bae8decc7b8c3c52fd",
+                {
+                    center: [59.96067390000002, 30.158655100000004],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bdd55d746509530f7f2719ce315328aa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_bdd55d746509530f7f2719ce315328aa.addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var marker_e596622a3fca33911c991278e2bc425d = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_8128208e598f17d4965e9cd2f77ebad7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_e596622a3fca33911c991278e2bc425d.setIcon(icon_8128208e598f17d4965e9cd2f77ebad7);
+        
+    
+        var popup_ec2a2566b6a3cbbaaae2ae1e356c614a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_939f5d3276ba4dd24dc8faeb4acd5697 = $(`<div id="html_939f5d3276ba4dd24dc8faeb4acd5697" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 0, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_ec2a2566b6a3cbbaaae2ae1e356c614a.setContent(html_939f5d3276ba4dd24dc8faeb4acd5697);
+            
+        
+
+        marker_e596622a3fca33911c991278e2bc425d.bindPopup(popup_ec2a2566b6a3cbbaaae2ae1e356c614a)
+        ;
+
+        
+    
+    
+            var marker_e7bb916c54bd8cc5d7618bb776fbc4fd = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_0eac74f8b62b2f676fe416ba46ca497e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_e7bb916c54bd8cc5d7618bb776fbc4fd.setIcon(icon_0eac74f8b62b2f676fe416ba46ca497e);
+        
+    
+        var popup_fce6b5cd24247e557dc16aa4bbe4e24d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92aa8cf416c20039b641bcf37a6f566b = $(`<div id="html_92aa8cf416c20039b641bcf37a6f566b" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 0, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_fce6b5cd24247e557dc16aa4bbe4e24d.setContent(html_92aa8cf416c20039b641bcf37a6f566b);
+            
+        
+
+        marker_e7bb916c54bd8cc5d7618bb776fbc4fd.bindPopup(popup_fce6b5cd24247e557dc16aa4bbe4e24d)
+        ;
+
+        
+    
+    
+            var marker_c86f6e65527957889a3192b1ed839497 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_2c5dd40c5e72922d94920b68c673d143 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_c86f6e65527957889a3192b1ed839497.setIcon(icon_2c5dd40c5e72922d94920b68c673d143);
+        
+    
+        var popup_beede62b3ae223bf6343baa44dcf1590 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9978c150e4fe55c7976714f33e55775 = $(`<div id="html_f9978c150e4fe55c7976714f33e55775" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_beede62b3ae223bf6343baa44dcf1590.setContent(html_f9978c150e4fe55c7976714f33e55775);
+            
+        
+
+        marker_c86f6e65527957889a3192b1ed839497.bindPopup(popup_beede62b3ae223bf6343baa44dcf1590)
+        ;
+
+        
+    
+    
+            var marker_0b16098c54505e0e8e6ad2fb866836ad = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_e2571506db947fe22252204f05d2c72f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_0b16098c54505e0e8e6ad2fb866836ad.setIcon(icon_e2571506db947fe22252204f05d2c72f);
+        
+    
+        var popup_4334eac79870a1099e2e6de3f739895b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afaadf65dca1504579568de874dc7198 = $(`<div id="html_afaadf65dca1504579568de874dc7198" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 4, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_4334eac79870a1099e2e6de3f739895b.setContent(html_afaadf65dca1504579568de874dc7198);
+            
+        
+
+        marker_0b16098c54505e0e8e6ad2fb866836ad.bindPopup(popup_4334eac79870a1099e2e6de3f739895b)
+        ;
+
+        
+    
+    
+            var marker_897c7b45710db38dfa836f5b8d140f78 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_503fa5fb75d2b537271f1df87f13aa16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_897c7b45710db38dfa836f5b8d140f78.setIcon(icon_503fa5fb75d2b537271f1df87f13aa16);
+        
+    
+        var popup_c1653026fe5e98717a16ce2aa214443a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eaac7db6f0a22867be88c31e894cdddb = $(`<div id="html_eaac7db6f0a22867be88c31e894cdddb" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 0, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_c1653026fe5e98717a16ce2aa214443a.setContent(html_eaac7db6f0a22867be88c31e894cdddb);
+            
+        
+
+        marker_897c7b45710db38dfa836f5b8d140f78.bindPopup(popup_c1653026fe5e98717a16ce2aa214443a)
+        ;
+
+        
+    
+    
+            var marker_b223d0a1678e9e6be4e864bd6b981c58 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_75a1af83a03b853b06f693c459f40a80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_b223d0a1678e9e6be4e864bd6b981c58.setIcon(icon_75a1af83a03b853b06f693c459f40a80);
+        
+    
+        var popup_2e02aa8ec4842ca7977326b7323a9e69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e034be8e1f07326d75c6d8036f1be395 = $(`<div id="html_e034be8e1f07326d75c6d8036f1be395" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 0, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_2e02aa8ec4842ca7977326b7323a9e69.setContent(html_e034be8e1f07326d75c6d8036f1be395);
+            
+        
+
+        marker_b223d0a1678e9e6be4e864bd6b981c58.bindPopup(popup_2e02aa8ec4842ca7977326b7323a9e69)
+        ;
+
+        
+    
+    
+            var marker_2eb0e626e7c8ede8cde22f078cc37f8a = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_4779926ebcbe4cdba725ccff19eaeb39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_2eb0e626e7c8ede8cde22f078cc37f8a.setIcon(icon_4779926ebcbe4cdba725ccff19eaeb39);
+        
+    
+        var popup_87968fdcbd5a794c9de7446f32d6ff3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ddc00b23c26f190c2d36d28490a9fdf = $(`<div id="html_2ddc00b23c26f190c2d36d28490a9fdf" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_87968fdcbd5a794c9de7446f32d6ff3a.setContent(html_2ddc00b23c26f190c2d36d28490a9fdf);
+            
+        
+
+        marker_2eb0e626e7c8ede8cde22f078cc37f8a.bindPopup(popup_87968fdcbd5a794c9de7446f32d6ff3a)
+        ;
+
+        
+    
+    
+            var marker_300c461398d227c7e73f32221224662a = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_1afe00a321c883cab9f54b608ce132e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_300c461398d227c7e73f32221224662a.setIcon(icon_1afe00a321c883cab9f54b608ce132e1);
+        
+    
+        var popup_9d0d0c7a16e80f81ab22f9604c0066b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85ddc20afd64b134a577388ba1f4a0b3 = $(`<div id="html_85ddc20afd64b134a577388ba1f4a0b3" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 0, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_9d0d0c7a16e80f81ab22f9604c0066b9.setContent(html_85ddc20afd64b134a577388ba1f4a0b3);
+            
+        
+
+        marker_300c461398d227c7e73f32221224662a.bindPopup(popup_9d0d0c7a16e80f81ab22f9604c0066b9)
+        ;
+
+        
+    
+    
+            var marker_eee0d840091882b82e4514015bf70d50 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_517e07b5e2c1ba3c9ac8860ec594928f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_eee0d840091882b82e4514015bf70d50.setIcon(icon_517e07b5e2c1ba3c9ac8860ec594928f);
+        
+    
+        var popup_0ad843ad377baedaae3d66588b153dd1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_712b26d6d5253fbfe33df69611c2d397 = $(`<div id="html_712b26d6d5253fbfe33df69611c2d397" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_0ad843ad377baedaae3d66588b153dd1.setContent(html_712b26d6d5253fbfe33df69611c2d397);
+            
+        
+
+        marker_eee0d840091882b82e4514015bf70d50.bindPopup(popup_0ad843ad377baedaae3d66588b153dd1)
+        ;
+
+        
+    
+    
+            var marker_a117386b90ec17f066abdc858d64c2cc = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_7fb35caf77db4359ec5346b802a81c14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_a117386b90ec17f066abdc858d64c2cc.setIcon(icon_7fb35caf77db4359ec5346b802a81c14);
+        
+    
+        var popup_e8a385af363448674c4797c62cdb4057 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81587bea303f9e513a5ce066e3aa92a7 = $(`<div id="html_81587bea303f9e513a5ce066e3aa92a7" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_e8a385af363448674c4797c62cdb4057.setContent(html_81587bea303f9e513a5ce066e3aa92a7);
+            
+        
+
+        marker_a117386b90ec17f066abdc858d64c2cc.bindPopup(popup_e8a385af363448674c4797c62cdb4057)
+        ;
+
+        
+    
+    
+            var marker_1c32253ddd852c4e50993a46577eab83 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_a2d6516ae9ec5cdce8512b5f5fde2f49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_1c32253ddd852c4e50993a46577eab83.setIcon(icon_a2d6516ae9ec5cdce8512b5f5fde2f49);
+        
+    
+        var popup_247d19af07446c01f582d6b3df418ca1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c90d9dda95303c3a242e3209fdd3dc0 = $(`<div id="html_5c90d9dda95303c3a242e3209fdd3dc0" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 4, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_247d19af07446c01f582d6b3df418ca1.setContent(html_5c90d9dda95303c3a242e3209fdd3dc0);
+            
+        
+
+        marker_1c32253ddd852c4e50993a46577eab83.bindPopup(popup_247d19af07446c01f582d6b3df418ca1)
+        ;
+
+        
+    
+    
+            var marker_9a6064c1e7016ded68291379b46d7eda = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_28810ed57d9b1562a0246422252d2913 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_9a6064c1e7016ded68291379b46d7eda.setIcon(icon_28810ed57d9b1562a0246422252d2913);
+        
+    
+        var popup_238f8b730c487677710bb839510a85cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6392413ac154eb5ac319526f638377a5 = $(`<div id="html_6392413ac154eb5ac319526f638377a5" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_238f8b730c487677710bb839510a85cd.setContent(html_6392413ac154eb5ac319526f638377a5);
+            
+        
+
+        marker_9a6064c1e7016ded68291379b46d7eda.bindPopup(popup_238f8b730c487677710bb839510a85cd)
+        ;
+
+        
+    
+    
+            var marker_59fc11c044fc18a37ef80dbb64f3a8f9 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_0cf7e6c994c9b3b3396dfb3118dcf8ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_59fc11c044fc18a37ef80dbb64f3a8f9.setIcon(icon_0cf7e6c994c9b3b3396dfb3118dcf8ee);
+        
+    
+        var popup_ed06b8e86fc78daecadde455646c81ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e13678412ca006bd0d15f52b876f6b8 = $(`<div id="html_6e13678412ca006bd0d15f52b876f6b8" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 4, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_ed06b8e86fc78daecadde455646c81ea.setContent(html_6e13678412ca006bd0d15f52b876f6b8);
+            
+        
+
+        marker_59fc11c044fc18a37ef80dbb64f3a8f9.bindPopup(popup_ed06b8e86fc78daecadde455646c81ea)
+        ;
+
+        
+    
+    
+            var marker_d3c7746d610534b283ed1df5536c38dc = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_57719a4528207e83dff25b07ca9e4c58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_d3c7746d610534b283ed1df5536c38dc.setIcon(icon_57719a4528207e83dff25b07ca9e4c58);
+        
+    
+        var popup_28ef40c92adc37fcaa2b924f91199da6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60e12acbb59e33b11e39dc2c3f8d4d62 = $(`<div id="html_60e12acbb59e33b11e39dc2c3f8d4d62" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_28ef40c92adc37fcaa2b924f91199da6.setContent(html_60e12acbb59e33b11e39dc2c3f8d4d62);
+            
+        
+
+        marker_d3c7746d610534b283ed1df5536c38dc.bindPopup(popup_28ef40c92adc37fcaa2b924f91199da6)
+        ;
+
+        
+    
+    
+            var marker_1f0183024e91d3072c718ba6c30dc383 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_d7a7e43bd4a706e608c1bd396f14dea1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_1f0183024e91d3072c718ba6c30dc383.setIcon(icon_d7a7e43bd4a706e608c1bd396f14dea1);
+        
+    
+        var popup_693a455d2e7b7548880e4f95a6a4d310 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_115544fb41db85e7da8636a65c9579f0 = $(`<div id="html_115544fb41db85e7da8636a65c9579f0" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 0, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_693a455d2e7b7548880e4f95a6a4d310.setContent(html_115544fb41db85e7da8636a65c9579f0);
+            
+        
+
+        marker_1f0183024e91d3072c718ba6c30dc383.bindPopup(popup_693a455d2e7b7548880e4f95a6a4d310)
+        ;
+
+        
+    
+    
+            var marker_1d3e9fed86cb9955e0922601f9c46724 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_fecd218d0e71454b27ec53d927752b4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_1d3e9fed86cb9955e0922601f9c46724.setIcon(icon_fecd218d0e71454b27ec53d927752b4f);
+        
+    
+        var popup_d7b4610c0ec184e50bb4a3edf7b02dd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_985f2c67560f4153fb986230c960b18e = $(`<div id="html_985f2c67560f4153fb986230c960b18e" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 0, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_d7b4610c0ec184e50bb4a3edf7b02dd2.setContent(html_985f2c67560f4153fb986230c960b18e);
+            
+        
+
+        marker_1d3e9fed86cb9955e0922601f9c46724.bindPopup(popup_d7b4610c0ec184e50bb4a3edf7b02dd2)
+        ;
+
+        
+    
+    
+            var marker_04dd0b51567438e8284e3c45e8886ab3 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_daa0e189b4b6507ef7a42a2c6db24152 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_04dd0b51567438e8284e3c45e8886ab3.setIcon(icon_daa0e189b4b6507ef7a42a2c6db24152);
+        
+    
+        var popup_7a9a96a8704e819d90dfd19d8706b89c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c0327aac2f1d3ad2ccc181fff0acb97 = $(`<div id="html_1c0327aac2f1d3ad2ccc181fff0acb97" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_7a9a96a8704e819d90dfd19d8706b89c.setContent(html_1c0327aac2f1d3ad2ccc181fff0acb97);
+            
+        
+
+        marker_04dd0b51567438e8284e3c45e8886ab3.bindPopup(popup_7a9a96a8704e819d90dfd19d8706b89c)
+        ;
+
+        
+    
+    
+            var marker_62d0bd9ca3c36d4c0c431cb4a4bb4826 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_177bd489b48132763393e20ae6d73b55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_62d0bd9ca3c36d4c0c431cb4a4bb4826.setIcon(icon_177bd489b48132763393e20ae6d73b55);
+        
+    
+        var popup_8d04eccd28bc9662ca0d824c447d667a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_003a5d09f17fc8c90adba356c51c8cdb = $(`<div id="html_003a5d09f17fc8c90adba356c51c8cdb" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_8d04eccd28bc9662ca0d824c447d667a.setContent(html_003a5d09f17fc8c90adba356c51c8cdb);
+            
+        
+
+        marker_62d0bd9ca3c36d4c0c431cb4a4bb4826.bindPopup(popup_8d04eccd28bc9662ca0d824c447d667a)
+        ;
+
+        
+    
+    
+            var marker_488d708fe5142f036f8f7506cfbd1a17 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_edb4c779d6c4f5aa7012e33d3eb7c1f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_488d708fe5142f036f8f7506cfbd1a17.setIcon(icon_edb4c779d6c4f5aa7012e33d3eb7c1f9);
+        
+    
+        var popup_cf2e6502b902c472cae5e239d4e85c2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f95e3663e18b546abc4c729a5e15cedf = $(`<div id="html_f95e3663e18b546abc4c729a5e15cedf" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_cf2e6502b902c472cae5e239d4e85c2d.setContent(html_f95e3663e18b546abc4c729a5e15cedf);
+            
+        
+
+        marker_488d708fe5142f036f8f7506cfbd1a17.bindPopup(popup_cf2e6502b902c472cae5e239d4e85c2d)
+        ;
+
+        
+    
+    
+            var marker_715abd2183e919ab04ff1ec0638d0b4f = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_05abe2d8cffc5b56c1a3d06aa106e338 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_715abd2183e919ab04ff1ec0638d0b4f.setIcon(icon_05abe2d8cffc5b56c1a3d06aa106e338);
+        
+    
+        var popup_660e89e5756e1164e6d0300d6b9c5d4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_192332b2ae0a332efa66b620cb116374 = $(`<div id="html_192332b2ae0a332efa66b620cb116374" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 0, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_660e89e5756e1164e6d0300d6b9c5d4e.setContent(html_192332b2ae0a332efa66b620cb116374);
+            
+        
+
+        marker_715abd2183e919ab04ff1ec0638d0b4f.bindPopup(popup_660e89e5756e1164e6d0300d6b9c5d4e)
+        ;
+
+        
+    
+    
+            var marker_104e4a79a6cdecf1526539f02e0b44e0 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_af9338c0cf6d4fc1c29c0e2f3c474233 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_104e4a79a6cdecf1526539f02e0b44e0.setIcon(icon_af9338c0cf6d4fc1c29c0e2f3c474233);
+        
+    
+        var popup_65c564cae561ef5764b02d8952807827 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60ecac5a2be8e9068299fe1c6d8c1aaf = $(`<div id="html_60ecac5a2be8e9068299fe1c6d8c1aaf" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_65c564cae561ef5764b02d8952807827.setContent(html_60ecac5a2be8e9068299fe1c6d8c1aaf);
+            
+        
+
+        marker_104e4a79a6cdecf1526539f02e0b44e0.bindPopup(popup_65c564cae561ef5764b02d8952807827)
+        ;
+
+        
+    
+    
+            var marker_b91990c2231285ea1a8b0f5433042bc3 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_4a5b30049a0ee90b29de72384cf61596 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_b91990c2231285ea1a8b0f5433042bc3.setIcon(icon_4a5b30049a0ee90b29de72384cf61596);
+        
+    
+        var popup_975671aa7eeb9071c161d49c35ffddfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f387f2a2564dd03c175fae8d209832e9 = $(`<div id="html_f387f2a2564dd03c175fae8d209832e9" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 0, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_975671aa7eeb9071c161d49c35ffddfb.setContent(html_f387f2a2564dd03c175fae8d209832e9);
+            
+        
+
+        marker_b91990c2231285ea1a8b0f5433042bc3.bindPopup(popup_975671aa7eeb9071c161d49c35ffddfb)
+        ;
+
+        
+    
+    
+            var marker_bedc852548705f7011c422c290101228 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_bc0ad7e67b1314872c06e7e8e0245387 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_bedc852548705f7011c422c290101228.setIcon(icon_bc0ad7e67b1314872c06e7e8e0245387);
+        
+    
+        var popup_8f440c575091e8171253f2f92517bcc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_139e0fbbd4485bd0094e20f91e93cf5a = $(`<div id="html_139e0fbbd4485bd0094e20f91e93cf5a" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 0, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_8f440c575091e8171253f2f92517bcc9.setContent(html_139e0fbbd4485bd0094e20f91e93cf5a);
+            
+        
+
+        marker_bedc852548705f7011c422c290101228.bindPopup(popup_8f440c575091e8171253f2f92517bcc9)
+        ;
+
+        
+    
+    
+            var marker_73ff2129c08d7cc3011c55179827f5d4 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_d949ac6fa583ac66edbedad628607805 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_73ff2129c08d7cc3011c55179827f5d4.setIcon(icon_d949ac6fa583ac66edbedad628607805);
+        
+    
+        var popup_e807d79359e89348cad13b7408ac0e6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1f548a1d298cd6ee9d1de4c8e3dba7b = $(`<div id="html_f1f548a1d298cd6ee9d1de4c8e3dba7b" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 0, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_e807d79359e89348cad13b7408ac0e6f.setContent(html_f1f548a1d298cd6ee9d1de4c8e3dba7b);
+            
+        
+
+        marker_73ff2129c08d7cc3011c55179827f5d4.bindPopup(popup_e807d79359e89348cad13b7408ac0e6f)
+        ;
+
+        
+    
+    
+            var marker_909316664d231a00487775b84ee7aecf = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_b4c309e86256690d1d45b826e2aeb144 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_909316664d231a00487775b84ee7aecf.setIcon(icon_b4c309e86256690d1d45b826e2aeb144);
+        
+    
+        var popup_a1cc0996d6ff3b37be003c4d41b9623e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bd40cf2c8610464448c2853fdc93bd0 = $(`<div id="html_3bd40cf2c8610464448c2853fdc93bd0" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 0, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_a1cc0996d6ff3b37be003c4d41b9623e.setContent(html_3bd40cf2c8610464448c2853fdc93bd0);
+            
+        
+
+        marker_909316664d231a00487775b84ee7aecf.bindPopup(popup_a1cc0996d6ff3b37be003c4d41b9623e)
+        ;
+
+        
+    
+    
+            var marker_ac665c6b2cc6021526831592a7539d8b = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_5afc6ef57dc1dc1aa69e240d80215e33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_ac665c6b2cc6021526831592a7539d8b.setIcon(icon_5afc6ef57dc1dc1aa69e240d80215e33);
+        
+    
+        var popup_724da94aaa253fc48db93bb3f5ec5e74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00f04af18c8e6ceae38c38ff63bdd2f6 = $(`<div id="html_00f04af18c8e6ceae38c38ff63bdd2f6" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 0, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_724da94aaa253fc48db93bb3f5ec5e74.setContent(html_00f04af18c8e6ceae38c38ff63bdd2f6);
+            
+        
+
+        marker_ac665c6b2cc6021526831592a7539d8b.bindPopup(popup_724da94aaa253fc48db93bb3f5ec5e74)
+        ;
+
+        
+    
+    
+            var marker_442d8842dccf85cb42158e1ff9e4e3c3 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_53832438e273831c93f8d9d6fca39511 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_442d8842dccf85cb42158e1ff9e4e3c3.setIcon(icon_53832438e273831c93f8d9d6fca39511);
+        
+    
+        var popup_2166e768716bf160c9a64a07c0923aff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4167563dbda49e144d450d3b9d3ce5a4 = $(`<div id="html_4167563dbda49e144d450d3b9d3ce5a4" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 0, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_2166e768716bf160c9a64a07c0923aff.setContent(html_4167563dbda49e144d450d3b9d3ce5a4);
+            
+        
+
+        marker_442d8842dccf85cb42158e1ff9e4e3c3.bindPopup(popup_2166e768716bf160c9a64a07c0923aff)
+        ;
+
+        
+    
+    
+            var marker_05fb185e3eee528add04cd7e3ba876a6 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_a435531093c74eae6278e9565db4618f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_05fb185e3eee528add04cd7e3ba876a6.setIcon(icon_a435531093c74eae6278e9565db4618f);
+        
+    
+        var popup_e38e6232b29ddec387d816902088bf3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8d5d0a5ad242e322333193681da7525 = $(`<div id="html_d8d5d0a5ad242e322333193681da7525" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 0, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_e38e6232b29ddec387d816902088bf3e.setContent(html_d8d5d0a5ad242e322333193681da7525);
+            
+        
+
+        marker_05fb185e3eee528add04cd7e3ba876a6.bindPopup(popup_e38e6232b29ddec387d816902088bf3e)
+        ;
+
+        
+    
+    
+            var marker_1d3be92fd675642a6589bf63ffb4cbad = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_17327fa308c6730f478a1d5ed760abc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_1d3be92fd675642a6589bf63ffb4cbad.setIcon(icon_17327fa308c6730f478a1d5ed760abc7);
+        
+    
+        var popup_7d1abce33753ca76878d895c3e9452e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2329651e858b0f35d993f5649c924344 = $(`<div id="html_2329651e858b0f35d993f5649c924344" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 0, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_7d1abce33753ca76878d895c3e9452e9.setContent(html_2329651e858b0f35d993f5649c924344);
+            
+        
+
+        marker_1d3be92fd675642a6589bf63ffb4cbad.bindPopup(popup_7d1abce33753ca76878d895c3e9452e9)
+        ;
+
+        
+    
+    
+            var marker_34b5ba23ddf2a48de76d6906289a3c5f = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_b7bb1790b037f02b991b28189b11d78c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_34b5ba23ddf2a48de76d6906289a3c5f.setIcon(icon_b7bb1790b037f02b991b28189b11d78c);
+        
+    
+        var popup_83597295d0fc9733ef94663d64b9bccc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_920c057498752f76e303fd41d9b16ce3 = $(`<div id="html_920c057498752f76e303fd41d9b16ce3" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 0, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_83597295d0fc9733ef94663d64b9bccc.setContent(html_920c057498752f76e303fd41d9b16ce3);
+            
+        
+
+        marker_34b5ba23ddf2a48de76d6906289a3c5f.bindPopup(popup_83597295d0fc9733ef94663d64b9bccc)
+        ;
+
+        
+    
+    
+            var marker_e307a4a00c7e4b3bbfa15fa4a26f4a8d = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_c0431d52ced5ac4ffafa6019ef4df64d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_e307a4a00c7e4b3bbfa15fa4a26f4a8d.setIcon(icon_c0431d52ced5ac4ffafa6019ef4df64d);
+        
+    
+        var popup_e6b9c6b76e01fbc539b7ed4dbcc875ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2daa1a4b7b88d3881ed9fa29cda228a6 = $(`<div id="html_2daa1a4b7b88d3881ed9fa29cda228a6" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_e6b9c6b76e01fbc539b7ed4dbcc875ac.setContent(html_2daa1a4b7b88d3881ed9fa29cda228a6);
+            
+        
+
+        marker_e307a4a00c7e4b3bbfa15fa4a26f4a8d.bindPopup(popup_e6b9c6b76e01fbc539b7ed4dbcc875ac)
+        ;
+
+        
+    
+    
+            var marker_0d375062e59ea566e5a0b044f4ed1292 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_4fb64b3dadc1939bbcbec96b0bc38311 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_0d375062e59ea566e5a0b044f4ed1292.setIcon(icon_4fb64b3dadc1939bbcbec96b0bc38311);
+        
+    
+        var popup_2a6b9cc0d63c4573e67e5753cc09fab2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_959bfcac348eba0ecef2f0335e78fe86 = $(`<div id="html_959bfcac348eba0ecef2f0335e78fe86" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 0, Ценовая группа: 0, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_2a6b9cc0d63c4573e67e5753cc09fab2.setContent(html_959bfcac348eba0ecef2f0335e78fe86);
+            
+        
+
+        marker_0d375062e59ea566e5a0b044f4ed1292.bindPopup(popup_2a6b9cc0d63c4573e67e5753cc09fab2)
+        ;
+
+        
+    
+    
+            var marker_881c48cbdb2b79d0905ae462744a4685 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_d25169f5e5fc2766e9063eb83bbded62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_881c48cbdb2b79d0905ae462744a4685.setIcon(icon_d25169f5e5fc2766e9063eb83bbded62);
+        
+    
+        var popup_82b9028519aaa69662cf376862fe0fdb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2733cdc23f2493a4acbecb27b40cb35a = $(`<div id="html_2733cdc23f2493a4acbecb27b40cb35a" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 0, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_82b9028519aaa69662cf376862fe0fdb.setContent(html_2733cdc23f2493a4acbecb27b40cb35a);
+            
+        
+
+        marker_881c48cbdb2b79d0905ae462744a4685.bindPopup(popup_82b9028519aaa69662cf376862fe0fdb)
+        ;
+
+        
+    
+    
+            var marker_e1cae0ddc40264a80de871af6262c729 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_c21055ba612e88327370a091e13d87f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_e1cae0ddc40264a80de871af6262c729.setIcon(icon_c21055ba612e88327370a091e13d87f8);
+        
+    
+        var popup_f8887772f85cd6deafcd7aa8425d33e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4accd495989f26e3be81c4fcdca5424c = $(`<div id="html_4accd495989f26e3be81c4fcdca5424c" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_f8887772f85cd6deafcd7aa8425d33e0.setContent(html_4accd495989f26e3be81c4fcdca5424c);
+            
+        
+
+        marker_e1cae0ddc40264a80de871af6262c729.bindPopup(popup_f8887772f85cd6deafcd7aa8425d33e0)
+        ;
+
+        
+    
+    
+            var marker_2c235bb8e60e8d8f88b76cc4c7c3358c = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_4db6bc9d91578f4e053e6a91cfd63ee4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_2c235bb8e60e8d8f88b76cc4c7c3358c.setIcon(icon_4db6bc9d91578f4e053e6a91cfd63ee4);
+        
+    
+        var popup_1fb6197986b4c11697d4c314dfe740cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc6ede647a103b530865813540c4673a = $(`<div id="html_dc6ede647a103b530865813540c4673a" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_1fb6197986b4c11697d4c314dfe740cf.setContent(html_dc6ede647a103b530865813540c4673a);
+            
+        
+
+        marker_2c235bb8e60e8d8f88b76cc4c7c3358c.bindPopup(popup_1fb6197986b4c11697d4c314dfe740cf)
+        ;
+
+        
+    
+    
+            var marker_1b156313b7addc45223841df5b8d2df8 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_cb460a2788abd8441bc810c48518c607 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_1b156313b7addc45223841df5b8d2df8.setIcon(icon_cb460a2788abd8441bc810c48518c607);
+        
+    
+        var popup_9e9381ec76e5e486c74ef2a6ecfbdb7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5572bcb4fed6d9de54eba9e32ac4519e = $(`<div id="html_5572bcb4fed6d9de54eba9e32ac4519e" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_9e9381ec76e5e486c74ef2a6ecfbdb7b.setContent(html_5572bcb4fed6d9de54eba9e32ac4519e);
+            
+        
+
+        marker_1b156313b7addc45223841df5b8d2df8.bindPopup(popup_9e9381ec76e5e486c74ef2a6ecfbdb7b)
+        ;
+
+        
+    
+    
+            var marker_ed3cfb6832f534a2553b991652fd7f10 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_45eec1393ce5df482049a796e863c88c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_ed3cfb6832f534a2553b991652fd7f10.setIcon(icon_45eec1393ce5df482049a796e863c88c);
+        
+    
+        var popup_8cddb07d9b103f7b7de646f7e165338b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a78b3e40bbf9118ce1208f4e6cf4782 = $(`<div id="html_5a78b3e40bbf9118ce1208f4e6cf4782" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 4, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_8cddb07d9b103f7b7de646f7e165338b.setContent(html_5a78b3e40bbf9118ce1208f4e6cf4782);
+            
+        
+
+        marker_ed3cfb6832f534a2553b991652fd7f10.bindPopup(popup_8cddb07d9b103f7b7de646f7e165338b)
+        ;
+
+        
+    
+    
+            var marker_a6e82869e7fd1020ca19af71427bb934 = L.marker(
+                [59.9606739, 30.1586551],
+                {}
+            ).addTo(map_142400035ca373bae8decc7b8c3c52fd);
+        
+    
+            var icon_c50c9cce6f6a3092b7071903575f3478 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_a6e82869e7fd1020ca19af71427bb934.setIcon(icon_c50c9cce6f6a3092b7071903575f3478);
+        
+    
+        var popup_50ddf142c22e4ebb6def878afc11626c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f029599b59e49deca1ecb56f10525e2 = $(`<div id="html_3f029599b59e49deca1ecb56f10525e2" style="width: 100.0%; height: 100.0%;">Ресторан: , Город: Saint Petersburg, Помещение: 3, Ценовая группа: 0, avg_orders: , sum_orders: , Конверсия: , АБ Группа: , Cluster: 7.0_4.0</div>`)[0];
+                popup_50ddf142c22e4ebb6def878afc11626c.setContent(html_3f029599b59e49deca1ecb56f10525e2);
+            
+        
+
+        marker_a6e82869e7fd1020ca19af71427bb934.bindPopup(popup_50ddf142c22e4ebb6def878afc11626c)
+        ;
+
+        
+    
+</script>
+</html>

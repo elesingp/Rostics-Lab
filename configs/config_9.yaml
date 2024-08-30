@@ -1,0 +1,35 @@
+configurations_ab:
+  - metric_id: 0
+    slice_type: "date, restaurant_id"
+    aggregator: "product_qnt"
+    parameter: "none"
+    test: "ttest"
+
+    parameter: "none"
+    aggregation_type: "mean"
+    split_method: "from_csv"
+
+    method: "bootstrap"
+    bootstrap_method: "normal"
+    bootstrap_cycles: 1
+    lower_bound: 0
+    upper_bound: 1
+    MDE: 6
+    alpha: 0.05
+    beta: 0.2
+
+common_config_ab:
+  exp_id: 0
+  dbname: "db"
+  user: "codespace"
+  host: "localhost"
+  project: "kfc-kiosk-3"
+  location: "US"
+  query_id: "bquxjob_159f1b6a_18cedf71333"
+  kiosk_path: C:\ROSTICS-LAB\project\static\test_data\data_1.csv
+  format: csv
+  groups_path: C:\ROSTICS-LAB\project\static\test_data\test_stratification_groups35.csv
+  name: "ab_test_2"
+  start_date: "2023-12-15"
+  data_collect_start_date: "2022-04-01"
+  data_collect_end_date: "2025-04-18"

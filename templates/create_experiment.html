@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Создание эксперимента</title>
+</head>
+<body>
+    <h2>Создание нового эксперимента</h2>
+    <form method="post" action="/create-experiment" enctype="multipart/form-data">
+        <label for="experiment_name">Название эксперимента:</label><br>
+        <input type="text" id="experiment_name" name="experiment_name" required><br>
+        <label for="start_date">Дата начала:</label><br>
+        <input type="date" id="start_date" name="start_date" required><br>
+        <label for="status">Статус:</label><br>
+        <input type="text" id="status" name="status" required><br><br>
+        <label for="config_file">Файл конфигурации:</label><br>
+        <input type="file" id="config_file" name="config_file" accept=".yaml, .yml"><br><br>
+        <input type="submit" value="Готово">
+    </form>
+</body>
+</html>

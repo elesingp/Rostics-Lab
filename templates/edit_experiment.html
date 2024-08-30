@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Редактировать эксперимент</title>
+</head>
+<body>
+    <h2>Редактировать эксперимент</h2>
+    <form action="{{ url_for('edit_experiment', exp_id=exp_id) }}" method="post">
+        <label for="experiment_name">Название эксперимента:</label>
+        <input type="text" id="experiment_name" name="experiment_name" value="{{ experiment_data['Название эксперимента'] }}" required><br><br>
+        <label for="start_date">Дата начала:</label>
+        <input type="date" id="start_date" name="start_date" value="{{ experiment_data['Дата начала'] }}" required><br><br>
+        <label for="status">Статус:</label>
+        <select id="status" name="status">
+            <option value="active" {% if experiment_data['Статус'] == 'active' %}selected{% endif %}>Активен</option>
+            <option value="completed" {% if experiment_data['Статус'] == 'completed' %}selected{% endif %}>Завершен</option>
+        </select><br><br>
+
+        <label for="config_content">Конфигурация YAML:</label>
+        <textarea id="config_content" name="config_content" rows="10" cols="50">{{ config_content }}</textarea>
+
+        <button type="submit">Сохранить изменения</button>
+    </form>
+    <form action="{{ url_for('delete_experiment', exp_id=exp_id) }}" method="post" onsubmit="return confirm('Вы уверены, что хотите удалить этот эксперимент?');">
+        <button type="submit">Удалить эксперимент</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Детали для {{ metric_id }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h2>Детали для {{ metric_id }}</h2>
+    <h2>Метрика по ресторанам</h2>
+    {{ metric_destcription_table|safe }}
+    {{ details_table|safe }}
+    {% if images %}
+        <div class="row">
+        {% for image_name in images %}
+            <div class="col-md-10 col-sm-14 mb-4">
+                <img src="{{ url_for('static', filename=image_name) }}" class="img-fluid img-thumbnail" alt="Visualization">
+            </div>
+        {% endfor %}
+        </div>
+    {% endif %}
+    <h2>Метрика по ресторанам</h2>
+    {{ aggregate_table|safe }}
+    <a href="/">Вернуться на главную</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+Метрика,Тест,AA pvalue,histogram_path,test_histogram_path,control_histogram_path,plot_path
+orders,ttest,0.25162968373361577,C:\ROSTICS-LAB\project\static\histogram_orders_1.png,C:\ROSTICS-LAB\project\static\test_histogram_orders_1.png,C:\ROSTICS-LAB\project\static\control_histogram_orders_1.png,C:\ROSTICS-LAB\project\static\plot_orders_1.png
+orders,ttest,0.2033541940884298,C:\ROSTICS-LAB\project\static\histogram_orders_1.png,C:\ROSTICS-LAB\project\static\test_histogram_orders_1.png,C:\ROSTICS-LAB\project\static\control_histogram_orders_1.png,C:\ROSTICS-LAB\project\static\plot_orders_1.png

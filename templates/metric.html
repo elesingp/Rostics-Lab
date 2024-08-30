@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Results for {{ metric_name }}</title>
+    <link rel="stylesheet" href="<!-- Путь к вашему CSS файлу -->">
+</head>
+<body>
+    <div class="container">
+        <h1>Detail Results for {{ metric_name }}</h1>
+        <!-- Предположим, что detail_results - это словарь или объект с подробной информацией -->
+        <div>
+            <p><strong>Mean Before Test:</strong> {{ detail_results.mean_before }}</p>
+            <p><strong>Mean After Test:</strong> {{ detail_results.mean_after }}</p>
+            <p><strong>Change:</strong> {{ detail_results.change }}%</p>
+            <p><strong>P-Value:</strong> {{ detail_results.p_value }}</p>
+        </div>
+        <!-- Добавьте дополнительную информацию и визуализации по мере необходимости -->
+    </div>
+</body>
+</html>

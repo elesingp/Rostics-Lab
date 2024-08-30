@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Эксперимент</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Основная таблица</h1>
+    <div class="table-responsive">
+        <table id="metrics-table">{{ table|safe }}</table>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Перебор всех строк таблицы
+        document.querySelectorAll('#metrics-table tr').forEach(row => {
+            const flag = row.getAttribute('data-flag'); // Получение значения флага
+            if (flag === '-1') {
+                row.style.backgroundColor = 'red'; // Заливка красным
+            } else if (flag === '1') {
+                row.style.backgroundColor = 'green'; // Заливка зеленым
+            }
+        });
+    });
+    </script>
+    <form action="/refresh-metrics-ab/{{ exp_id }}" method="post">
+        <button type="submit">Refresh</button>
+    </form>
+    <form action="{{ url_for('show_map_page', exp_id=exp_id) }}" method="get">
+        <button type="submit">Показать карту ресторанов</button>
+    </form>
+    <div class="table-responsive">
+        {{ test_info1|safe }}
+    </div>
+    <div class="table-responsive">
+        {{ test_info2|safe }}
+    </div>
+    <div class="table-responsive">
+        {{ groups|safe }}
+    </div>
+    <a href="/edit-experiment/{{ exp_id }}" class="btn btn-warning">Редактировать эксперимент</a>
+    <a href="/">Вернуться на главную</a>
+</div>
+</body>
+</html>

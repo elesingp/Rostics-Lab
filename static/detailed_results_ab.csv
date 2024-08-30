@@ -1,0 +1,4 @@
+exp_id,metric_id,Метрика,Преобразование,Тест,Метод,Сплитование,AA pvalue,visualization_names,aggregate_path
+2,0,clicks,default,ttest,default,from_csv,0.9753239254034352,"['plot_scatter_2_0_clicks_main.png', 'plot_combined_difference_2_0_clicks_main.png', 'histogram_2_0_clicks_main.png']",C:\ROSTICS-LAB\project\static\restaurant_aggregates_2_0.csv
+2,1,views,default,ttest,default,from_csv,0.012399145083292762,"['plot_scatter_2_1_views_main.png', 'plot_combined_difference_2_1_views_main.png', 'histogram_2_1_views_main.png']",C:\ROSTICS-LAB\project\static\restaurant_aggregates_2_1.csv
+2,2,ctr,default,ttest,default,from_csv,0.5714238087592851,"['plot_scatter_2_2_ctr_main.png', 'plot_combined_difference_2_2_ctr_main.png', 'histogram_2_2_ctr_main.png']",C:\ROSTICS-LAB\project\static\restaurant_aggregates_2_2.csv

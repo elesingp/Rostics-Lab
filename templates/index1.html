@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fff; /* Белый фон */
+            color: #333; /* Черный текст */
+        }
+        
+        .btn-success, .btn-primary, button {
+            background-color: #D32F2F; /* Красный цвет кнопок */
+            border: none; /* Убрать границу */
+            color: #fff; /* Белый текст */
+        }
+        
+        .btn-success:hover, .btn-primary:hover, button:hover {
+            background-color: #B71C1C; /* Темно-красный цвет при наведении */
+        }
+        
+        .container {
+            border: 2px solid #D32F2F; /* Красная граница контейнера */
+            padding: 20px;
+            border-radius: 5px; /* Скругление углов */
+        }
+        
+        h2 {
+            color: #D32F2F; /* Красный цвет заголовков */
+        }
+        
+        table {
+            border-collapse: collapse; /* Убрать двойные границы */
+        }
+        
+        th, td {
+            border: 1px solid #D32F2F; /* Красные границы для ячеек таблицы */
+            padding: 8px; /* Отступы внутри ячеек */
+        }
+        
+        th {
+            background-color: #D32F2F; /* Красный фон заголовков таблицы */
+            color: #fff; /* Белый текст */
+        }
+        
+        .table-responsive {
+            border: 2px solid #D32F2F; /* Красная граница вокруг таблицы */
+            padding: 10px;
+            border-radius: 5px; /* Скругление углов */
+        }
+        
+        .mb-3 a, .mb-3 a:hover {
+            color: #fff; /* Белый текст на кнопках */
+        }
+    </style>
+</head>
+<body>
+    <div class="mb-3">
+        <a href="/create-experiment" class="btn btn-success">Создать эксперимент</a>
+    </div>
+    <div class="container mt-5">
+        <h2>Список экспериментов</h2>
+        <div class="table-responsive">
+            {{ table|safe }}
+        </div>
+    </div>
+    <form action="{{ url_for('map_page') }}" method="get">
+        <button type="submit" class="btn btn-primary">Карта ресторанов</button>
+    </form>
+    <div class="mb-3">
+        <a href="/aa-test" class="btn btn-primary">Провести АА-тест</a>
+    </div>
+</body>
+</html>
