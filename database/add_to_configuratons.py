@@ -1,5 +1,5 @@
 from .bff import Database
-from config import common_config, configurations
+#from config import common_config, configurations
 
 def add_config_in_configuration_table():
         configurations_tuples = [
